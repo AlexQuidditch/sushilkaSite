@@ -1,0 +1,39 @@
+/*!
+Main Styles
+*/
+
+@import '../partials/_variables';
+
+/*Fonts Settings*/
+
+@each $hs,
+$font-parametrs in
+( 1, 600 48px $main-font),
+( 2, 600 40px $main-font),
+( 3, 600 36px $main-font),
+( 4, 500 32px $main-font),
+( 5, 500 24px $second-font),
+( 6, 500 20px $second-font) {
+	h#{$hs} {
+		padding: 0;
+		margin: 0;
+		font: #{$font-parametrs};
+		color: #424242;
+	}
+}
+
+a, p, span {
+	font-family: $second-font;
+	font-size: 17px;
+	font-weight: 400;
+	color: $second-elm;
+	text-decoration: none;
+	word-break: normal;
+	outline: none;
+	padding: 5px 0;
+	margin: 0;
+}
+
+a:visited {
+	$slider-elms: mix(#ecf0f1, $second-elm, 25%);
+}

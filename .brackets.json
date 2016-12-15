@@ -1,0 +1,12 @@
+{
+    "sass.enabled": true,
+    "path": {
+        "**/*.scss": {
+            "sass.enabled": false,
+            "linting.collapsed": true,
+            "debug.showErrorsInStatusBar": true,
+            "brackets-git.gitPath": "git",
+            "fonts.fontSize": "13px"
+        }
+    }
+}

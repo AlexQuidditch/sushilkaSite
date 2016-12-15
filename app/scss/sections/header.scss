@@ -1,0 +1,121 @@
+@import '../../bower_components/bourbon/app/assets/stylesheets/_bourbon';
+@import '../partials/_variables';
+@import '../partials/_layout';
+@import '../partials/_mixins';
+.header {
+	z-index: $header-zindex;
+	display: block;
+	position: fixed;
+	width: 100%;
+	background-color: $main-elm;
+	box-shadow:
+		0 8px 10px 1px rgba(black,0.14),
+		0 3px 14px 2px rgba(black,0.12),
+		0 5px 5px -3px rgba(black,0.3);
+	transition: .2s ease-in-out;
+	&:hover::after {
+		transform: translateY(0)
+	}
+	&::after {
+		position: absolute;
+		top: 80px;
+		left: 0;
+		content: '';
+		@include triangle(100vw 15px, $main-elm transparent, up-left);
+	}
+	&_scrolled {
+		box-shadow: none;
+		transform: translateY(-100%)
+	}
+	&__logo {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.contacts {
+	display: table-cell;
+	position: relative;
+	vertical-align: middle;
+	text-align: left;
+	left: -35px;
+	width: auto;
+	&__list {}
+	&__item {
+		font-size: 16px;
+		color: $second-elm;
+		line-height: 1.65;
+		width: 1.035em;
+		transition: .2s ease-in-out;
+		&:hover {
+			color: $river-blue
+		}
+	}
+	&__icon {
+		font-size: 20px !important;
+	}
+}
+
+.registration {
+	display: table-cell;
+	vertical-align: middle;
+	width: auto;
+	&__item {}
+	&__link {
+		text-align: center;
+		vertical-align: middle;
+		height: 32px;
+		padding: 12px;
+		color: $second-elm;
+		line-height: 32px;
+		background: transparent;
+		transition: .2s ease-in-out;
+		&:hover {
+			color: $river-blue;
+		}
+	}
+}
+
+.callback {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+	&__button {
+		text-align: center;
+		vertical-align: middle;
+		height: 32px;
+		padding: 12px 16px 12px 12px;
+		color: $second-elm;
+		line-height: 32px;
+		background: transparent;
+		border: 2px solid transparent;
+		transition: .2s ease-in-out;
+		&:hover {
+			border-color: $second-elm;
+		}
+	}
+	&__icon {
+		vertical-align: middle;
+		margin: 0 2px;
+		.callback__button:hover & {
+			animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+		}
+	}
+}
+
+@keyframes trambling-animation {
+	0%,
+	50%,
+	100% {
+		transform: rotate(0deg);
+	}
+	10%,
+	30% {
+		transform: rotate(-10deg);
+	}
+	20%,
+	40% {
+		transform: rotate(10deg);
+	}
+}

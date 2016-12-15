@@ -1,0 +1,24 @@
+{
+  "name": "sushilkaSite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "Alex Quidditch",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-useref": "^3.0.4",
+    "run-sequence": "^1.1.2"
+  }
+}
