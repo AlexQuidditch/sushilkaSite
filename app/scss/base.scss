@@ -15,10 +15,17 @@ body {
 	transition: .2s ease-in-out
 }
 
-.container {
-	display: table;
-	width: 1180px;
+.wrapper {
+	width: 100%;
+	max-width: 1180px;
 	margin: 0 auto
+}
+
+.container_flex-row {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 }
 
 .main {
@@ -26,19 +33,6 @@ body {
 	float: right;
 	width: 78%;
 	margin-top: 150px
-}
-
-.important {
-	z-index: $content-zindex;
-	position: absolute;
-	width: inherit;
-	height: auto;
-	margin: 90px 0 0;
-	&__image {
-		position: relative;
-		display: block;
-		margin: 0 auto
-	}
 }
 
 @include waves-light( $second-elm, $ripple-opacity );

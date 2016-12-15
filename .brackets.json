@@ -3,7 +3,7 @@
     "path": {
         "**/*.scss": {
             "sass.enabled": false,
-            "linting.collapsed": true,
+            "linting.collapsed": false,
             "debug.showErrorsInStatusBar": true,
             "brackets-git.gitPath": "git",
             "fonts.fontSize": "13px"
