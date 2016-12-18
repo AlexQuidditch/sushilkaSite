@@ -1,0 +1,78 @@
+@import '../../bower_components/bourbon/app/assets/stylesheets/_bourbon';
+@import '../partials/_variables';
+@import '../partials/_layout';
+@import '../partials/_mixins';
+
+$icon-size: 200px;
+
+.section-title {
+	text-align: center;
+	width: 100%;
+	font-size: 3em;
+}
+
+.information {
+	padding: 10vh 0;
+}
+
+.information-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-self: center;
+	width: 85%;
+	margin: 10vh auto 5vh;
+	&__card {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		align-items: center;
+		width: 31%;
+		padding: 20px;
+		margin: 1vh;
+		transition: .3s ease-in;
+		cursor: default;
+		@include MDShadow-1;
+		&:hover {
+			@include MDShadow-2
+		}
+	}
+	&__title {
+		font-size: 1.5rem
+	}
+	&__icon {
+		width: $icon-size;
+		height: $icon-size
+	}
+	&__svg {
+		width: 100%;
+		height: 100%;
+		fill: rgba($second-elm, .9);
+		.information-list__card:hover & {
+			animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+		}
+		.information-list__card:last-child:hover & {
+			animation: none;
+		}
+	}
+	&__text {
+		text-align: center;
+	}
+}
+
+@keyframes trambling-animation {
+	0%,
+	50%,
+	100% {
+		transform: rotate(0deg);
+	}
+	10%,
+	30% {
+		transform: rotate(-5deg);
+	}
+	20%,
+	40% {
+		transform: rotate(5deg);
+	}
+}

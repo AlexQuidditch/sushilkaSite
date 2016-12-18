@@ -12,30 +12,36 @@ body {
 	background: url('../assets/img/pentagon.png');
 	background-position: center;
 	background-repeat: repeat;
-	transition: .2s ease-in-out
+	transition: .3s ease-in;
 }
 
 .wrapper {
 	width: 100%;
-	max-width: 1180px;
-	margin: 0 auto
+	max-width: 1280px;
+	margin: 10vh auto;
+	background-color: aliceblue;
+	@include MDShadow-1;
 }
 
 .container_flex-row {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	align-items: center;
+	align-self: center;
 }
 
 .main {
+	display: inline-block;
 	z-index: $content-zindex;
-	float: right;
-	width: 78%;
-	margin-top: 150px
+	width: 79%;
 }
 
-@include waves-light( $second-elm, $ripple-opacity );
+@include waves-light( $second-elm, $ripple-opacity);
+
+svg:not(:root) {
+	overflow: visible;
+}
 
 //	Import Sections
 @import 'sections/header';

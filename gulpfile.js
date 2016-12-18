@@ -30,8 +30,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function () {
 	return gulp.src('app/scss/*.scss')
 		.pipe(sourcemaps.init())
-			.pipe(sass(sassOptions))
-			.pipe(postcss(postOptions))
+			.pipe(sass())
 		.pipe(sourcemaps.write('maps'))
 	.pipe(gulp.dest('app/css'))
 });
@@ -82,6 +81,15 @@ gulp.task('clean:build', function () {
 	return del.sync(['build/**/*', '!build/assets', '!build/assets/**/*']);
 });
 
+gulp.task('sass-build', function () {
+	return gulp.src('app/scss/*.scss')
+		.pipe(sourcemaps.init())
+			.pipe(sass(sassOptions))
+			.pipe(postcss(postOptions))
+		.pipe(sourcemaps.write('maps'))
+	.pipe(gulp.dest('app/css'))
+});
+
 // Build Sequences
 // ---------------
 
@@ -94,7 +102,7 @@ gulp.task('default', function (callback) {
 gulp.task('build', function (callback) {
 	runSequence(
 		'clean:build',
-		'sass', ['useref', 'images', 'fonts'],
+		'sass-build', ['useref', 'images', 'fonts'],
 		//		'useref',
 		callback
 	)

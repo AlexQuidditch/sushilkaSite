@@ -3,16 +3,14 @@
 @import '../partials/_layout';
 @import '../partials/_mixins';
 .sidebar {
-	position: fixed;
-	width: 17%;
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
 	height: auto;
-	margin-top: 150px;
+	margin-left: 5px;
+	background-color: white;
 	transition: .2s ease-in-out;
-	&_scrolled {
-		height: auto;
-		background: white;
-		@include MDShadow-2;
-	}
+	@include MDShadow-1;
 	&__list {}
 	&__item {
 		display: block;

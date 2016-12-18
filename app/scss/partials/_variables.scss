@@ -1,15 +1,16 @@
 // fonts
-$main-font: 'Lora',serif;
-$second-font: 'Roboto Condensed', sans-serif;
+$main-font: 'Playfair Display', serif;
+$second-font: 'Philosopher', sans-serif;
 
 // colors
 $main-elm: #ffffff;
-$second-elm: #E70070;
+$second-elm: #802424;
 $slider-elms: mix(#ecf0f1, $second-elm, 25%);
 $body-bckgrnd: black;
 
 $main-text: #4e6361; // main text
 $link: #6cac70; // anchor tags
+$vk: #2980b9;
 
 //Blue
 $river-blue: #3498db;
@@ -42,6 +43,8 @@ $header-zindex: 30;
 $modal-zindex: 40;
 $overlay-zindex: 50;
 $modal-zindex: 60;
+
+$material: cubic-bezier(.6,-0.04,.34,1);
 
 $color-1: lighten(#3E2723, 7%); // green dark
 $color-2: darken(#3E2723, 5%); // green darker
