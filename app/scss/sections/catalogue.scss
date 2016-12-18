@@ -2,6 +2,7 @@
 @import '../partials/_variables';
 @import '../partials/_layout';
 @import '../partials/_mixins';
+
 .catalogue {}
 
 .product {
@@ -21,19 +22,21 @@
 	&__title {
 		font-size: 1.5rem;
 	}
-	&__image {}
+	&__image {
+		margin: 20px 0 10px;
+		background-size: contain;
+	}
 	&__description {}
 	&__order {
-		z-index: 1;
 		overflow: hidden;
 		vertical-align: middle;
 		-moz-user-select: none;
 		height: 2.5em;
 		padding: 0 1.5em;
+		margin-top: .5rem;
 		color: $main-elm;
 		line-height: 2.5em;
 		letter-spacing: .5px;
-		text-decoration: none;
 		background-color: rgba($second-elm, .8);
 		cursor: pointer;
 		border: none;
