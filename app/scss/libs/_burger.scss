@@ -6,7 +6,7 @@
 
 
 // Vendor prefixes
-$sass-burger-add-vendor-prefixes: true !default;
+$sass-burger-add-vendor-prefixes: false !default;
 
 // Burger
 @mixin burger($width: 30px, $height: 5px, $gutter: 3px, $color: #000, $border-radius: 0, $transition-duration: .3s) {
@@ -29,6 +29,7 @@ $sass-burger-add-vendor-prefixes: true !default;
         display: block;
         width: $width;
         height: $height;
+		padding: 0;
         background-color: $color;
         outline: 1px solid transparent; // 1
         @if $border-radius != 0 {

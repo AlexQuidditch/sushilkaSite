@@ -21,7 +21,6 @@ $icon-size: 200px;
 	justify-content: center;
 	align-content: center;
 	align-self: center;
-	width: 85%;
 	margin: 10vh auto 5vh;
 	&__card {
 		display: flex;
@@ -65,14 +64,14 @@ $icon-size: 200px;
 	0%,
 	50%,
 	100% {
-		transform: rotate(0deg);
+		transform: translateX(0);
 	}
 	10%,
 	30% {
-		transform: rotate(-5deg);
+		transform: translateX(-2.5%);
 	}
 	20%,
 	40% {
-		transform: rotate(5deg);
+		transform: translateX(2.5%);
 	}
 }

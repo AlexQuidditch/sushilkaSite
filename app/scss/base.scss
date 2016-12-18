@@ -6,14 +6,14 @@
 html,
 body {
 	width: 100%;
-	height: 100%;
+	height: 100%
 }
 
 body {
 	background: url('../assets/img/pentagon.png');
 	background-position: center;
 	background-repeat: repeat;
-	transition: .3s ease-in;
+	transition: .3s ease-in
 }
 
 .wrapper {
@@ -21,7 +21,7 @@ body {
 	max-width: 1280px;
 	margin: 10vh auto;
 	background-color: aliceblue;
-	@include MDShadow-1;
+	@include MDShadow-1
 }
 
 .container_flex-row {
@@ -29,19 +29,19 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	align-self: center;
+	align-self: center
 }
 
 .main {
-	display: inline-block;
 	z-index: $content-zindex;
-	width: 79%;
+	width: 85%;
+	margin: auto;
 }
 
 @include waves-light( $second-elm, $ripple-opacity);
 
 svg:not(:root) {
-	overflow: visible;
+	overflow: visible
 }
 
 //	Import Sections

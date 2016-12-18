@@ -52,6 +52,10 @@
 
 	<div id="wrapper" class="wrapper">
 
+		<a id="menuButton" class="menu-button" href="#">
+			<span class="burger-icon"></span>
+		</a>
+
 		<header id="header" class="header"></header>
 
 		<section id="intro" class="intro">
@@ -67,6 +71,57 @@
 			</div>
 
 		</section>
+
+		<aside id="sidebar" class="sidebar">
+			<ul class="sidebar__list">
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Роллы</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Запечённые роллы</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Темпура роллы</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Тортильи</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Темпура</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Японский омлет</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Салаты</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Лапша и рис</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Наборы</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Соусы</a>
+				</li>
+				<li class="sidebar__li">
+					<a href="#" data-roll="#" class="sidebar__item">
+						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;Напитки</a>
+				</li>
+			</ul>
+		</aside>
+
+		<main id="main" class="main">
 
 		<section id="information" class="information">
 
@@ -129,40 +184,7 @@
 
 		</section>
 
-		<aside id="sidebar" class="sidebar">
-			<ul class="sidebar__list">
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" class="sidebar__item">
-						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Пункт меню</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" class="sidebar__item">
-						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Пункт меню</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" class="sidebar__item">
-						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Пункт меню</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" class="sidebar__item">
-						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Пункт меню</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" class="sidebar__item">
-						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Пункт меню</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" class="sidebar__item">
-						<i class="sidebar__icon fa fa-fw fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Пункт меню</a>
-				</li>
-			</ul>
-		</aside>
-
-		<main id="main" class="main">
-
-			<section id="stocks" class="stocks"></section>
-
-			<section id="catalogue" class="catalogue">
+		<section id="catalogue" class="catalogue">
 
 				<ul class="container_flex-row">
 
@@ -247,7 +269,15 @@
 
 			<div class="form__name">
 				<label for="name">
-					<input class="input" id="posName" value="" type="text" name="name" pattern="[a-zA-Zа-яА-Я]{4,}" placeholder="Введите ваше имя" required>
+					<input
+					class="input"
+					id="posName"
+					value=""
+					type="text"
+					name="name"
+					pattern="[a-zA-Zа-яА-Я]{4,}"
+					placeholder="Введите ваше имя"
+					required>
 
 					<span class="input__hint">Например: Мария</span>
 				</label>
@@ -255,14 +285,26 @@
 
 			<div class="form__phone">
 				<label for="phone">
-					<input class="input" id="posPhone" value="" type="tel" name="phone" pattern="[0-9]{9,20}" placeholder="Введите номер телефона" required>
+					<input
+					class="input"
+					id="posPhone"
+					value=""
+					type="tel"
+					name="phone"
+					pattern="[0-9]{9,20}"
+					placeholder="Введите номер телефона"
+					required>
 
 					<span class="input__hint">Например: 80138297826</span>
 				</label>
 			</div>
 
 			<div class="form__submit">
-				<input class="input__submit" type="submit" id="send" value="Отправить" />
+				<input
+				class="input__submit"
+				type="submit"
+				id="send"
+				value="Отправить" />
 			</div>
 
 		</form>
@@ -287,6 +329,16 @@
 	<script src="js/modal.js"></script>
 	<script src="js/main.js"></script>
 	<!-- endbuild -->
+
+	<script>
+		var circle = document.getElementById('menuButton'),
+			sidebar = document.getElementById('sidebar');
+		circle.addEventListener('click', function (e) {
+			e.preventDefault(),
+			circle.classList.toggle('is-active'),
+			sidebar.classList.toggle('is-active')
+		});
+	</script>
 
 </body>
 

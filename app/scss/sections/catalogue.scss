@@ -3,7 +3,9 @@
 @import '../partials/_layout';
 @import '../partials/_mixins';
 
-.catalogue {}
+.catalogue {
+	margin: auto
+}
 
 .product {
 	display: flex;

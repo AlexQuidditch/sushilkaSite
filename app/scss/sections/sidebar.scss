@@ -2,15 +2,48 @@
 @import '../partials/_variables';
 @import '../partials/_layout';
 @import '../partials/_mixins';
-.sidebar {
+@import "../libs/burger";
+
+.menu-button {
+	position: fixed;
 	display: inline-block;
-	vertical-align: top;
-	width: 20%;
+	z-index: 100;
+	bottom: auto;
+	padding: 22px 16px;
+	background-color: $second-elm;
+	@include MDShadow-3;
+	border-radius: 50%;
+	transform: translate(-170%, 0%);
+	transition: .5s $material;
+	&.is-active {
+		transform: translate(55%, 145%);
+		@include MDShadow-4
+	}
+}
+
+.burger-icon {
+	@include burger(30px, 3px, 5px, $main-elm);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}
+
+.sidebar {
+	position: fixed;
+	display: inline-block;
+	@include center($xy: y);
+	width: 250px;
 	height: auto;
 	margin-left: 5px;
 	background-color: white;
-	transition: .2s ease-in-out;
+	transform: translate(-170%, -50%);
+	transition: .5s ease-in-out;
 	@include MDShadow-1;
+	&.is-active {
+		transform: translate(-70%, -50%);
+		@include MDShadow-4;
+	}
 	&__list {}
 	&__item {
 		display: block;
