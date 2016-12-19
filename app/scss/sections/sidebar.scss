@@ -8,16 +8,16 @@
 	position: fixed;
 	display: inline-block;
 	z-index: 100;
-	bottom: auto;
+	left: 50%;
+	top: -22px;
 	padding: 22px 16px;
 	background-color: $second-elm;
 	@include MDShadow-3;
 	border-radius: 50%;
-	transform: translate(-170%, 0%);
-	transition: .5s $material;
+	transform: translateX(-50%);
+	transition: .5s ease;
 	&.is-active {
-		transform: translate(55%, 145%);
-		@include MDShadow-4
+		@include MDShadow-5
 	}
 }
 
@@ -31,51 +31,52 @@
 
 .sidebar {
 	position: fixed;
-	display: inline-block;
+	text-align: center;
+	width: 200px;
 	@include center($xy: y);
-	width: 250px;
-	height: auto;
-	margin-left: 5px;
-	background-color: white;
-	transform: translate(-170%, -50%);
-	transition: .5s ease-in-out;
-	@include MDShadow-1;
-	&.is-active {
-		transform: translate(-70%, -50%);
-		@include MDShadow-4;
+	left: 1vw;
+	&__list {
+		display: inline-block;
+		overflow: hidden;
+		width: 0;
+		height: 20px;
+		margin-left: 5px;
+		background-color: white;
+		@include MDShadow-2;
+		transition: width .5s ease-in-out 0s, height 1s ease-in-out .75s;
+		&.is-active {
+			width: 200px;
+			height: 576px;
+			@include MDShadow-5;
+		}
 	}
-	&__list {}
 	&__item {
+		text-align: left;
 		display: block;
+		padding: 10px 0 10px 15px;
 		font-family: $second-font;
 		font-size: 18px;
 		line-height: 28px;
 		text-decoration: none;
+		white-space: nowrap;
 		color: $second-elm;
-		padding: 10px 0 10px 15px;
-		border-left: solid 4px transparent;
-		box-shadow: 0 0 10px transparent;
-		transition: .2s ease-in-out;
+		box-shadow: none;
+		transition: .2s ease-in-out, opacity .2s ease-in-out 2s;
 		&:hover {
-			color: $slider-elms;
-			background: white;
-			border-color: $slider-elms;
 			@include MDShadow-2;
 		}
-		&_active {
-			font-family: $second-font;
-			color: $slider-elms;
-			border-left: solid 4px $slider-elms;
-		}
 		&_clear {
+			text-align: left;
+			display: block;
 			height: 48px;
+			font-family: $second-font;
+			font-size: 18px;
+			line-height: 28px;
+			text-decoration: none;
+			white-space: nowrap;
+			color: $second-elm;
+			box-shadow: none;
 			cursor: auto;
-			&:hover {
-				color: $slider-elms;
-				background: transparent;
-				border-color: transparent;
-				box-shadow: none;
-			}
 		}
 	}
 }
