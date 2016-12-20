@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
 	Waves.init();
-	Waves.attach('.sidebar__item', ['waves-float', 'waves-light']);
+	Waves.attach('[ripple-dark]', ['waves-dark']),
+	Waves.attach('[ripple-light]', ['waves-light']);
 
 	$('#slider').flickity({
 		arrowShape: {

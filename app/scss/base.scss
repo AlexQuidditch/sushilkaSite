@@ -38,7 +38,9 @@ body {
 	margin: auto;
 }
 
-@include waves-light( $second-elm, $ripple-opacity);
+@include waves-light( $main-elm, $ripple-opacity);
+
+@include waves-dark( $second-elm, $ripple-opacity);
 
 svg:not(:root) {
 	overflow: visible

@@ -34,19 +34,20 @@
 		overflow: hidden;
 		vertical-align: middle;
 		-moz-user-select: none;
+		width: 50%;
 		height: 2.5em;
-		padding: 0 1.5em;
 		margin-top: .5rem;
 		color: $main-elm;
 		line-height: 2.5em;
-		letter-spacing: .5px;
-		background-color: rgba($second-elm, .8);
+		background-color: $second-elm;
 		cursor: pointer;
 		border: none;
-		border-radius: 2px;
 		transition: .3s ease-in;
 		&:hover {
 			@include MDShadow-2;
+		}
+		&:focus .product__order {
+			opacity: 0.5;
 		}
 	}
 }

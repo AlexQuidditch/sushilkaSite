@@ -3,11 +3,36 @@
 @import '../partials/_layout';
 @import '../partials/_mixins';
 .footer {
-	padding: 0 8%
+	padding: 30px 8%;
 }
 
 .social {
 	flex: 1 1 49%;
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__list {
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		width: 50%;
+	}
+	&__item {
+		display: inline-block;
+	}
+	&__link {
+		padding: 10px 10px 9px;
+		font-size: 2rem;
+		border: 1px solid $second-elm;
+		border-radius: 50%;
+		transition: .3s ease-in;
+		&:hover {
+			background-color: $second-elm;
+			color: $main-elm;
+			@include MDShadow-2;
+		}
+	}
 }
 
 .feedback {

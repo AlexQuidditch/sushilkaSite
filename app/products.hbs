@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script>
+		{
+			products: [
+				{
+					title: "Yehuda",
+					picture: "Katz",
+					decription: "lorem",
+					price: "220"
+			},
+				{
+					title: "qfwqq",
+					picture: "eggegg",
+					decription: "lorergerem",
+					price: "2201"
+			},
+				{
+					title: "fqqwfq",
+					picture: "jytjtj",
+					decription: "lorerthrhtm",
+					price: "2250"
+			}
+  ]
+		};
+
+		Handlebars.registerHelper('products', function (items, options) {
+			var out = '<ul class="container_flex-row">';
+
+			for (var i = 0, l = items.length; i < l; i++) {
+				out = out + '<li class="product" ripple-dark>' + options.fn(items[i]) + "</li>";
+			}
+			out = out + "</ul>";
+			return out;
+		});
+	</script>
+
+</head>
+
+<body>
+
+	{{#list products}}
+	<h6 class="product__title">{{title}}</h6>
+	<img class="product__image" src="assets/img/{{picture}}" alt="ролл {{title}}">
+	<span class="product__description">{{decription}}</span>
+	<button class="product__order">{{price}} р.</button>
+	{{/list}}
+
+</body>
+
+</html>
