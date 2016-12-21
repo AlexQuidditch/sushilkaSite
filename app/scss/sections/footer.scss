@@ -3,7 +3,12 @@
 @import '../partials/_layout';
 @import '../partials/_mixins';
 .footer {
-	padding: 30px 8%;
+	max-width: 1180px;
+	margin: auto;
+	padding: 30px;
+	background-color: $main-elm;
+	@include MDShadow-1;
+
 }
 
 .social {
@@ -22,14 +27,13 @@
 		display: inline-block;
 	}
 	&__link {
-		padding: 10px 10px 9px;
+		padding: 8px 8px 10px;
 		font-size: 2rem;
-		border: 1px solid $second-elm;
-		border-radius: 50%;
-		transition: .3s ease-in;
+		color: $main-elm;
+		background-color: $river-blue;
+		border-radius: 5%;
+		transition: .3s ease-in-out;
 		&:hover {
-			background-color: $second-elm;
-			color: $main-elm;
 			@include MDShadow-2;
 		}
 	}
@@ -37,6 +41,20 @@
 
 .feedback {
 	flex: 1 1 49%;
+	text-align: center;
+	padding: 10px;
+	&__button {
+		display: inline-block;
+		width: 50%;
+		padding: 10px;
+		color: $main-elm;
+		background-color: $second-elm;
+		border: none;
+		transition: .3s ease-in-out;
+		&:hover {
+			@include MDShadow-2;
+		}
+	}
 }
 
 .requisites {
@@ -46,9 +64,16 @@
 	justify-content: space-between;
 	align-content: center;
 	align-items: flex-start;
-	&__column {}
+	padding-top: 3vh;
+	&__column {
+		flex: 1 1 25%;
+		text-align: center;
+	}
 	&__list {}
-	&__name {}
+	&__name {
+		font-size: 1.2rem;
+		line-height: 1.5em;
+	}
 	&__item {}
 	&__text {}
 	&__mail {}

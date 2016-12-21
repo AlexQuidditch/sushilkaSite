@@ -19,3 +19,11 @@ $(document).ready(function () {
 	});
 
 });
+
+var circle = document.querySelector('#menuButton'),
+	sidebar = document.querySelector('#sidebar__list');
+circle.addEventListener('click', function (e) {
+	e.preventDefault(),
+		circle.classList.toggle('is-active'),
+		sidebar.classList.toggle('is-active')
+});

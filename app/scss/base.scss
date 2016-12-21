@@ -16,26 +16,24 @@ body {
 	transition: .3s ease-in
 }
 
-.wrapper {
+.main {
+	z-index: $content-zindex;
 	width: 100%;
 	max-width: 1180px;
-	margin: 10vh auto;
+	margin: 1vh auto;
+	padding: 5vh 0;
 	background-color: aliceblue;
 	@include MDShadow-1
 }
 
 .container_flex-row {
+	width: 90%;
+	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
 	align-self: center
-}
-
-.main {
-	z-index: $content-zindex;
-	width: 90%;
-	margin: auto;
 }
 
 @include waves-light( $main-elm, $ripple-opacity);

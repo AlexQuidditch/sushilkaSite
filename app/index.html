@@ -253,13 +253,7 @@
 					<span class="social__text">Мы в соцсетях:</span>
 					<ul class="social__list">
 						<li class="social__item">
-							<a href="//vk.com/sushiachinsk" class="social__link" ripple-light><i class="fa fa-vk" aria-hidden="true"></i></a>
-						</li>
-						<li class="social__item">
-							<a href="//vk.com/sushiachinsk" class="social__link" ripple-light><i class="fa fa-vk" aria-hidden="true"></i></a>
-						</li>
-						<li class="social__item">
-							<a href="//vk.com/sushiachinsk" class="social__link" ripple-light><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#" class="social__link" ripple-light><i class="fa fa-vk" aria-hidden="true"></i></a>
 						</li>
 					</ul>
 
@@ -267,7 +261,7 @@
 
 				<div class="feedback">
 
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non debitis veritatis quaerat fugiat odit eos, accusantium modi eius, autem adipisci fuga nisi molestiae saepe nostrum dignissimos reprehenderit enim ullam fugit.
+					<a href="#0" class="feedback__button" ripple-light>Отправить отзыв</a>
 
 				</div>
 
@@ -285,13 +279,13 @@
 
 					</div>
 
-
 					<div class="requisites__column">
 						<div class="requisites__icon"></div>
-						<span class="requisites__adress">
-							Адрес:
-							<br> г. Ачинск, мкр-он 4, д.29, пом.57
-						</span>
+						<ul class="requisites__list"><span class="requisites__name">Адрес:</span>
+							<li class="requisites__item">
+								<p class="requisites__text">г. Ачинск, мкр-он 4, д.29, пом.57</p>
+							</li>
+						</ul>
 					</div>
 
 					<div class="requisites__column">
@@ -321,11 +315,12 @@
 					</div>
 
 				</div>
+
 			</div>
 
 		</footer>
 
-		<div class="container">
+		<div class="container_flex-row">
 			<div class="webeor">
 				<a href="#0" class="webeor__link">
 					<object type="image/svg+xml" data="assets/svg/logo.svg" class="webeor__img">
@@ -377,16 +372,6 @@
 	<script src="js/modal.js"></script>
 	<script src="js/main.js"></script>
 	<!-- endbuild -->
-
-	<script>
-		var circle = document.querySelector('#menuButton'),
-			sidebar = document.querySelector('#sidebar__list');
-		circle.addEventListener('click', function (e) {
-			e.preventDefault(),
-			circle.classList.toggle('is-active'),
-			sidebar.classList.toggle('is-active')
-		});
-	</script>
 
 </body>
 
