@@ -30,6 +30,7 @@
 }
 
 .sidebar {
+	z-index: $header-zindex;
 	position: fixed;
 	text-align: center;
 	width: 200px;
@@ -40,7 +41,6 @@
 		overflow: hidden;
 		width: 0;
 		height: 20px;
-		margin-left: 5px;
 		background-color: white;
 		@include MDShadow-2;
 		transition: width .5s ease-in-out 0s, height 1s ease-in-out .75s;

@@ -9,18 +9,11 @@ body {
 	height: 100%
 }
 
-body {
-	background: url('../assets/img/pentagon.png');
-	background-position: center;
-	background-repeat: repeat;
-	transition: .3s ease-in
-}
-
 .main {
 	z-index: $content-zindex;
 	width: 100%;
 	max-width: 1180px;
-	margin: 1vh auto;
+	margin: 95vh auto 1vh;
 	padding: 5vh 0;
 	background-color: aliceblue;
 	@include MDShadow-1

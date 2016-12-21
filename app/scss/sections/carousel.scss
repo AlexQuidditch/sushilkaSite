@@ -3,22 +3,18 @@
 @import '../partials/_layout';
 @import '../partials/_mixins';
 
-.intro {
+.header {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 80vh;
+	height: 100vh;
 	padding: 10px;
 	background: white;
-	&__registration {
-		text-align: center;
-		margin-top: 25px;
-	}
 }
 
 .slider {
 	width: 100%;
-	height: 80vh;
+	height: 100%;
 	margin: 0 auto;
 	background-color: transparent;
 	&__slide {
