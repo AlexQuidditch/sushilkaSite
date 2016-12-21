@@ -39,7 +39,6 @@ body {
 }
 
 @include waves-light( $main-elm, $ripple-opacity);
-
 @include waves-dark( $second-elm, $ripple-opacity);
 
 svg:not(:root) {
