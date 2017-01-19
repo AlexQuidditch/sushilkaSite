@@ -2,54 +2,254 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
 
-	<script>
-		{
-			products: [
-				{
-					title: "Yehuda",
-					picture: "Katz",
-					decription: "lorem",
-					price: "220"
-			},
-				{
-					title: "qfwqq",
-					picture: "eggegg",
-					decription: "lorergerem",
-					price: "2201"
-			},
-				{
-					title: "fqqwfq",
-					picture: "jytjtj",
-					decription: "lorerthrhtm",
-					price: "2250"
-			}
-  ]
-		};
-
-		Handlebars.registerHelper('products', function (items, options) {
-			var out = '<ul class="container_flex-row">';
-
-			for (var i = 0, l = items.length; i < l; i++) {
-				out = out + '<li class="product" ripple-dark>' + options.fn(items[i]) + "</li>";
-			}
-			out = out + "</ul>";
-			return out;
-		});
-	</script>
+    <script>
+        Handlebars.registerHelper('list', function(items, options) {
+            var out = '<ul class="container_flex-row">';
+            for (var i = 0, l = items.length; i < l; i++) {
+                out = out + '<li class="product" ripple-dark>' + options.fn(items[i]) + "</li>";
+            };
+            out = out + "</ul>";
+            return out;
+        });
+    </script>
 
 </head>
 
 <body>
 
-	{{#list products}}
-	<h6 class="product__title">{{title}}</h6>
-	<img class="product__image" src="assets/img/{{picture}}" alt="ролл {{title}}">
-	<span class="product__description">{{decription}}</span>
-	<button class="product__order">{{price}} р.</button>
-	{{/list}}
+    {{#list rolls}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list baked}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list tempura-rolls}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list torts}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list tempura}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list omlet}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list salats}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list rice}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list sets}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list sauces}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
+
+    {{#list drinks}}
+        <h6 class="product__title">{{title}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{title}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button class="product__order">
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р
+            </span>
+	    </button>
+    {{/list}}
 
 </body>
 

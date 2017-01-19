@@ -3,6 +3,7 @@
 @import '../partials/_layout';
 @import '../partials/_mixins';
 .catalogue {
+	padding-top: 10px;
 	margin: auto
 }
 
@@ -13,7 +14,8 @@
 	align-items: center;
 	width: 30%;
 	padding: 20px;
-	margin: 1vh;
+	margin: 10px;
+    background-color: $main-elm;
 	transition: .3s ease-in;
 	cursor: default;
 	@include MDShadow-1;
@@ -21,6 +23,7 @@
 		@include MDShadow-2;
 	}
 	&__title {
+        text-align: center;
 		font-size: 1.5rem;
 	}
 	&__image {
@@ -28,17 +31,20 @@
 		max-width: 250px;
 		background-size: contain;
 	}
-	&__description {}
+	&__description {
+        text-align: center;
+}
 	&__order {
 		overflow: hidden;
 		-moz-user-select: none;
+		user-select: none;
 		width: 50%;
 		padding: 0;
 		margin-top: .5rem;
 		cursor: pointer;
 		border: none;
 		perspective: 1000px;
-		transition: 0.3s ease-in;
+		transition: .3s ease-in;
 		&:hover {
 			@include MDShadow-2;
 		}
@@ -61,7 +67,7 @@
 		transition: transform 0.4s ease;
 		.csstransforms3d &::before {
 			position: absolute;
-			content: attr(data-hover);
+			content: attr(data-focus);
 			top: 100%;
 			left: 0;
 			width: 100%;

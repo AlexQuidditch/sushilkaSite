@@ -3,8 +3,8 @@ $main-font: 'Playfair Display', serif;
 $second-font: 'Philosopher', sans-serif;
 
 // colors
-$main-elm: #ffffff;
-$second-elm: #8d3a3a;
+$main-elm: #fff;
+$second-elm: #934444;
 $slider-elms: mix(#ecf0f1, $second-elm, 25%);
 $body-bckgrnd: black;
 
@@ -40,8 +40,8 @@ $ripple-opacity: 0.4;
 $secondary-nav: 10;
 $content-zindex: 20;
 $header-zindex: 30;
-$modal-zindex: 40;
-$overlay-zindex: 50;
+$overlay-zindex: 40;
+$cart-zindex: 50;
 $modal-zindex: 60;
 
 $material: cubic-bezier(.6,-0.04,.34,1);
@@ -54,3 +54,4 @@ $color-5: #f06a59; // Burnt Sienna
 $color-6: #ffffff; // White
 $red: #d76666; // error messages
 $blacked: black;
+$grayed: #424242;

@@ -1,0 +1,892 @@
+﻿{
+    rolls: [{
+            title: "Вега",
+            type: "ролл",
+            picture: "/rolls/vega.jpg",
+            decription: "Рис, огурец, авокадо, хияше вакаме, кунжут, нори",
+            weight: "210",
+            price: "199"
+        },
+        {
+            title: "Гари",
+            type: "ролл",
+            picture: "/rolls/gari.jpg",
+            decription: "Рис, крабовые палочки, лосось, авокадо, тобико, нори",
+            weight: "200",
+            price: "199"
+        },
+        {
+            title: "Капа хосомаки",
+            type: "ролл",
+            picture: "/rolls/kapa-hosomaki.jpg",
+            decription: "Рис, огурец, кунжут, нори",
+            weight: "150",
+            price: "99"
+        },
+        {
+            title: "Лава",
+            type: "ролл",
+            picture: "/rolls/lava.jpg",
+            decription: "Рис, сливочный сыр, лосось жареный, соус Лава, нори",
+            weight: "250",
+            price: "279"
+        },
+        {
+            title: "Нью-Йорк маки",
+            type: "ролл",
+            picture: "/rolls/new-york-maki.jpg",
+            decription: "Рис, сливочный сыр, лосось холодного копчения, тобико, кунжут, нори",
+            weight: "250",
+            price: "219"
+        },
+        {
+            title: "Грин ролл",
+            type: "ролл",
+            picture: "/rolls/green-roll.jpg",
+            decription: "Рис, сливочный сыр, курица, помидор, салат, соус Цезарь, нори",
+            weight: "230",
+            price: "189"
+        },
+        {
+            title: "Сырный ролл",
+            type: "ролл",
+            picture: "/rolls/cheese-roll.jpg",
+            decription: "Рис, сливочный сыр, сыр Чедар, нори",
+            weight: "230",
+            price: "169"
+        },
+        {
+            title: "Аляска",
+            type: "ролл",
+            picture: "/rolls/alaska.jpg",
+            decription: "Рис, сливочный сыр, лосось холодного копчения, авокадо, креветка, нори",
+            weight: "220",
+            price: "259"
+        },
+        {
+            title: "Банито маки",
+            type: "ролл",
+            picture: "/rolls/bonito-maki.jpg",
+            decription: "Рис, сливочный сыр, огурец, угорь, стружка тунца, нори",
+            weight: "220",
+            price: "219"
+        },
+        {
+            title: "Кунсей капа",
+            type: "ролл",
+            picture: "/rolls/kunsei-cappa.jpg",
+            decription: "Рис, сливочный сыр, огурец, лосось холодного копчения, кунжут, нори",
+            weight: "220",
+            price: "229"
+        },
+        {
+            title: "Золотой унаги дракон",
+            type: "ролл",
+            picture: "/rolls/gold-unagi-dragon.jpg",
+            decription: "Рис, угорь, авокадо, кунжут, нори, унаги соус",
+            weight: "210",
+            price: "259"
+        },
+        {
+            title: "Икура сомаки",
+            type: "ролл",
+            picture: "/rolls/ikura-somaki.jpg",
+            decription: "Рис, сливочный сыр, икра лосося, нори",
+            weight: "210",
+            price: "279"
+        },
+        {
+            title: "Мадагаскар",
+            type: "ролл",
+            picture: "/rolls/madagascar.jpg",
+            decription: "Рис, окунь жареный, зелёный лук, тобико, кунжут, соус унаги, нори",
+            weight: "230",
+            price: "229"
+        },
+        {
+            title: "Майами",
+            type: "ролл",
+            picture: "/rolls/mayami.jpg",
+            decription: "Рис, сливочный сыр, огурец, лосось копчёный, укроп, нори",
+            weight: "220",
+            price: "199"
+        },
+        {
+            title: "Йоджи маки",
+            type: "ролл",
+            picture: "/rolls/yodghi-maki.jpg",
+            decription: "Рис, угорь, сливочный сыр, огурец, имбирь, нори",
+            weight: "260",
+            price: "380"
+        },
+        {
+            title: "син унаги",
+            type: "ролл",
+            picture: "/rolls/sin-unagi.jpg",
+            decription: "Рис, сливочный сыр, угорь, авокадо, соус унаги, кунжут, нори",
+            weight: "220",
+            price: "249"
+        },
+        {
+            title: "Скандинавия",
+            type: "ролл",
+            picture: "/rolls/skandinavia.jpg",
+            decription: "Рис, сливочный сыр, копчёный лосось, зелёный лук, нори",
+            weight: "220",
+            price: "279"
+        },
+        {
+            title: "Калифорния с креветкой",
+            type: "ролл",
+            picture: "/rolls/california-krevets.jpg",
+            decription: "Рис, креветка, огурец, майонез, тобико, нори",
+            weight: "240",
+            price: "259"
+        },
+        {
+            title: "Филадельфия делюкс",
+            type: "ролл",
+            picture: "/rolls/philadelphia-delux.jpg",
+            decription: "Рис, семга, японский омлет тамаго, сливочный сыр, икра лосося, нори",
+            weight: "270",
+            price: "289"
+        },
+        {
+            title: "Тори ролл",
+            type: "ролл",
+            picture: "/rolls/tori-roll.jpg",
+            decription: "Рис, курица, огурец, авокадо, майонез, лук зелёный, нори",
+            weight: "210",
+            price: "289"
+        },
+        {
+            title: "Саяке маки",
+            type: "ролл",
+            picture: "/rolls/sayake-maki.jpg",
+            decription: "Рис, сыр сливочный, лосось, авокадо, копчёный угорь, огурец, соус унаги, кунжут, нори",
+            weight: "250",
+            price: "279"
+        },
+        {
+            title: "Хауз ролл",
+            type: "ролл",
+            picture: "/rolls/khaz-roll.jpg",
+            decription: "Рис, нори, огурец, майонез, красный окунь",
+            weight: "200",
+            price: "179"
+        },
+        {
+            title: "Шахматы роллы",
+            type: "ролл",
+            picture: "/rolls/chess.jpg",
+            decription: "Рис, огурец, омлет, тигровая креветка, сливочный сыр, сёмга, икра тобико, кунжут, нори",
+            weight: "250",
+            price: "259"
+        },
+        {
+            title: "Филадельфия",
+            type: "ролл",
+            picture: "/rolls/philadelphia-classical.jpg",
+            decription: "Рис, сыр сливочный, слабосоленый лосось, нори",
+            weight: "220",
+            price: "249"
+        },
+        {
+            title: "Цезарь ролл",
+            type: "ролл",
+            picture: "/rolls/tsezar-roll.jpg",
+            decription: "Рис, курица, огурец, сыр пармезан, соус цезарь, кунжут, нори",
+            weight: "230",
+            price: "159"
+        },
+        {
+            title: "Филадельфия с луком",
+            type: "ролл",
+            picture: "/rolls/philadelphia-green.jpg",
+            decription: "Рис, сыр сливочный, слабосолёная сёмга, зелёный лук, нори",
+            weight: "240",
+            price: "249"
+        },
+        {
+            title: "Кавагиши",
+            type: "ролл",
+            picture: "/rolls/kawagishi.jpg",
+            decription: "Рис, мидии, огурец, кунжут, нори",
+            weight: "200",
+            price: "129"
+        },
+        {
+            title: "Зелёный дракон",
+            type: "ролл",
+            picture: "/rolls/green-dragon.jpg",
+            decription: "Рис, слабосоленый лосось, сыр сливочный, угорь, огурец, лук зеленый, икра тобико, соус унаги, нори",
+            weight: "250",
+            price: "299"
+        },
+        {
+            title: "Гейша",
+            type: "ролл",
+            picture: "/rolls/geisha.jpg",
+            decription: "Рис, сливочный сыр, слабосоленый лосось, огурец, нори",
+            weight: "210",
+            price: "199"
+        },
+        {
+            title: "Инь-Янь",
+            type: "ролл",
+            picture: "/rolls/in-yan.jpg",
+            decription: "Рис, лосось, болагрский перец, сыр сливочный, огурец, нори",
+            weight: "210",
+            price: "209"
+        },
+        {
+            title: "Калифорния",
+            type: "ролл",
+            picture: "/rolls/california.jpg",
+            decription: "Рис, снежный краб, огурец, авокадо, икра тобико, майонез, нори",
+            weight: "230",
+            price: "249"
+        },
+        {
+            title: "Канада",
+            type: "ролл",
+            picture: "/rolls/canada.jpg",
+            decription: "Рис, сыр сливочный, копченый лосось, авокадо, кунжут, соус унаги, нори",
+            weight: "260",
+            price: "279"
+        },
+        {
+            title: "Нежный угорь",
+            type: "ролл",
+            picture: "/rolls/sweet-ugor.jpg",
+            decription: "Рис, сливочный сыр, угорь, авокадо, кунжут, нори",
+            weight: "230",
+            price: "229"
+        },
+        {
+            title: "Планета маки",
+            type: "ролл",
+            picture: "/rolls/maki-planet.jpg",
+            decription: "Рис, сыр сливочный, слабосолёный лосоь, такуан, салат, нори",
+            weight: "210",
+            price: "199"
+        },
+        {
+            title: "Онигара",
+            type: "ролл",
+            picture: "/rolls/onigara.jpg",
+            decription: "Рис, сыр сливочный, угорь, такуан, соус унаги, кунжут, нори",
+            weight: "250",
+            price: "299"
+        },
+        {
+            title: "Саяке унаги маки",
+            type: "ролл",
+            picture: "/rolls/sayake-unagi-maki.jpg",
+            decription: "Рис, сливочный сыр, огурец, слаосоленый лосось, угорь, тобико, унаги соус, нори",
+            weight: "240",
+            price: "249"
+        },
+        {
+            title: "Филадельфия с огурцом",
+            type: "ролл",
+            picture: "/rolls/philadelphia-ogurets.jpg",
+            decription: "Рис, сыр сливочный, слабосоленый лосось, огурец, нори",
+            weight: "240",
+            price: "249"
+        },
+        {
+            title: "Унаги ролл",
+            type: "ролл",
+            picture: "/rolls/unagi-roll.jpg",
+            decription: "Рис, огурец, угорь, соус унаги, кунжут, нори",
+            weight: "220",
+            price: "219"
+        },
+        {
+            title: "Унаги маки ролл",
+            type: "ролл",
+            picture: "/rolls/unagi-maki.jpg",
+            decription: "Рис, огурец, копчёный угорь, кунжут, соус унаги, нори",
+            weight: "200",
+            price: "189"
+        },
+        {
+            title: "Унаги тидзу",
+            type: "ролл",
+            picture: "/rolls/unagi-titzu.jpg",
+            decription: "Рис, сливочный сыр, угорь, огурец, слабосоленый лосось, нори",
+            weight: "250",
+            price: "249"
+        },
+        {
+            title: "Фудзияма",
+            type: "ролл",
+            picture: "/rolls/phudziyama.jpg",
+            decription: "Рис, сливочный сыр, мидии, омлёт, угорь, огурец, нори",
+            weight: "260",
+            price: "249"
+        },
+        {
+            title: "Экспресс",
+            type: "ролл",
+            picture: "/rolls/express.jpg",
+            decription: "Рис, сливочный сыр, куриное филе, огурец, кунжут белый и чёрный, тобико, нори",
+            weight: "260",
+            price: "229"
+        },
+        {
+            title: "Филадельфия с креветкой",
+            type: "ролл",
+            picture: "/rolls/philadelphia-crevets.jpg",
+            decription: "Рис, сыр сливочный, слабосолёный лосось, креветки тигровые, нори",
+            weight: "230",
+            price: "259"
+        },
+        {
+            title: "Якудза",
+            type: "ролл",
+            picture: "/rolls/yakudza.jpg",
+            decription: "Рис, тигровая креветка, пекинская капуста, тобико, зелёный лук, соус спайси, кунжут, нори",
+            weight: "210",
+            price: "269"
+        },
+        {
+            title: "Норт ролл",
+            type: "ролл",
+            picture: "/rolls/north-roll.jpg",
+            decription: "Рис, сыр сливочный, угорь, слабосоленый лосось, тобико, кунжут, нори",
+            weight: "250",
+            price: "259"
+        },
+        {
+            title: "Окинава",
+            type: "ролл",
+            picture: "/rolls/okinava.jpg",
+            decription: "Рис, омлет, огурец, соус с морским гребешком и слабосоленым лососем, японский майонез, нори",
+            weight: "230",
+            price: "219"
+        },
+        {
+            title: "Унаги филадельфия",
+            type: "ролл",
+            picture: "/rolls/.jpg",
+            decription: "Рис, сливочный сыр, огурец, угорь, тобико, нори",
+            weight: "240",
+            price: "269"
+        },
+        {
+            title: "Гурмэ маки",
+            type: "ролл",
+            picture: "/rolls/gurme-maki.jpg",
+            decription: "Рис, сливочный сыр, тунец, слабосоленый лосось, лук зелёный, нори",
+            weight: "210",
+            price: "229"
+        },
+        {
+            title: "Бука",
+            type: "ролл",
+            picture: "/rolls/buka.jpg",
+            decription: "Рис, мидии, болгарский перец, чесночный соус, кунжут, нори",
+            weight: "200",
+            price: "129"
+        },
+        {
+            title: "Бостон",
+            type: "ролл",
+            picture: "/rolls/boston.jpg",
+            decription: "Рис, тунец, авокадо, кунжут, тобико, нори",
+            weight: "210",
+            price: "219"
+        },
+        {
+            title: "Ролл с огурцом",
+            type: "Классические роллы",
+            picture: "/rolls/boston.jpg",
+            decription: "Рис, огурец, кунжут, нори",
+            weight: "100",
+            price: "59"
+        },
+        {
+            title: "Ролл с авокадо",
+            type: "Классические роллы",
+            picture: "/rolls/boston.jpg",
+            decription: "Рис, авокадо, нори",
+            weight: "100",
+            price: "79"
+        },
+        {
+            title: "Ролл с слабосоленым лососем",
+            type: "Классические роллы",
+            picture: "/rolls/boston.jpg",
+            decription: "Рис, слабосоленый лосось, нори",
+            weight: "100",
+            price: "89"
+        },
+        {
+            title: "Ролл с лососем копченым",
+            type: "Классические роллы",
+            picture: "/rolls/boston.jpg",
+            decription: "Рис, копченый лосось, нори",
+            weight: "100",
+            price: "89"
+        },
+        {
+            title: "Ролл с угрем",
+            type: "Классические роллы",
+            picture: "/rolls/boston.jpg",
+            decription: "Рис, угорь, нори",
+            weight: "100",
+            price: "99"
+        },
+        {
+            title: "Ролл с креветкой",
+            type: "Классические роллы",
+            picture: "/rolls/boston.jpg",
+            decription: "Рис, тигровая креветка, сыр сливочный",
+            weight: "100",
+            price: "99"
+        },
+        {
+            title: "Ролл с тунцом",
+            type: "Классические роллы",
+            picture: "/rolls/boston.jpg",
+            decription: "Рис, тунец, нори",
+            weight: "100",
+            price: "109"
+        }
+    ],
+    baked: [{
+        title: "Запеченный лосось",
+        type: "Запеченные роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр сливочный, слабосоленый лосось, майрнез, соус спайси, тобико, нори",
+        weight: "270",
+        price: "259"
+    }, {
+        title: "Запеченная креветка",
+        type: "Запеченные роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сливочный сыр, авокадо, креветка тигровая, тобико, кунжут, соус спайси, нори",
+        weight: "270",
+        price: "259"
+    }, {
+        title: "Запеченная филадельфия",
+        type: "Запеченные роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сливочный сыр, слабосоленый лосось, соус спайси, нори",
+        weight: "270",
+        price: "279"
+    }, {
+        title: "Запеченные мидии",
+        type: "Запеченные роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр сливочный, снежный краб, мидии, соус спайси, нори",
+        weight: "240",
+        price: "189"
+    }, {
+        title: "Запеченный гребешок",
+        type: "Запеченные роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, слабосоленый лосось, морской гребешок, сливочный сыр, соус спайси, нори",
+        weight: "240",
+        price: "189"
+    }, {
+        title: "Запеченный кальмар",
+        type: "Запеченные роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, огурец, кальмар, сливочный сыр, соус спайси, майонез, кунжут, нори",
+        weight: "240",
+        price: "159"
+    }, {
+        title: "Запеченный угорь",
+        type: "Запеченные роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сливочный сыр, угорь, соус спайси, тобтко, майонез, нори",
+        weight: "240",
+        price: "229"
+    }],
+    tempura: [{
+        title: "Унаги темпура",
+        type: "Горячие роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, угорь, авокадо, салат, тобико, темпура, нори",
+        weight: "250",
+        price: "239"
+    }, {
+        title: "Цезарь темпура",
+        type: "Горячие роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, курица, помидор, соус цезарь, салат, темпура, нори",
+        weight: "250",
+        price: "199"
+    }, {
+        title: "Сяки спайси темпура",
+        type: "Горячие роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, лосось, огурец, соус спайси, темпура, нори",
+        weight: "230",
+        price: "199"
+    }, {
+        title: "Эби спайси темпура",
+        type: "Горячие роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, тигровые креветки, соус спайси, тобико, темпура, нори",
+        weight: "230",
+        price: "219"
+    }, {
+        title: "Чиз темпура",
+        type: "Горячие роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр сливочный слабосоленый лосось, креветка тгровая, темпура, нори",
+        weight: "220",
+        price: "249"
+    }, {
+        title: "Горячая филадельфия",
+        type: "Горячие роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр сливочный, слабосоленый лосось, огурец, авокадо, темпура, нори",
+        weight: "250",
+        price: "239"
+    }, {
+        title: "Горячая гейша",
+        type: "Горячие роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр сливочный, огурец, креветка тигровая, угорь, темпура, нори",
+        weight: "250",
+        price: "259"
+    }, {
+        title: "Темпура тортилья с лососем",
+        type: "Горячие роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Сыр сливочный, тортилья, копченый лосось, лук зеленый, темпура",
+        weight: "300",
+        price: "239"
+    }, {
+        title: "Темпура тортилья с беконом",
+        type: "Горячие роллы",
+        picture: "/rolls/boston.jpg",
+        decription: "Сыр сливочный, тортилья, бекон, овощи, темпура",
+        weight: "300",
+        price: "249"
+    }],
+    torts: [{
+        title: "Тортилья с угрем",
+        type: "Роллы в торитлье",
+        picture: "/rolls/boston.jpg",
+        decription: "Сырная тортилья, сыр сливочный, угорь, зеленый лук",
+        weight: "235",
+        price: "289"
+    }, {
+        title: "Тортилья с лососем",
+        type: "Роллы в торитлье",
+        picture: "/rolls/boston.jpg",
+        decription: "Сырная тортилья, сыр сливочный, копченый лосось, огурец, помидор",
+        weight: "235",
+        price: "219"
+    }, {
+        title: "Тортилья с говядиной",
+        type: "Роллы в торитлье",
+        picture: "/rolls/boston.jpg",
+        decription: "Сырная тортилья, сыр сливочный, говядина, огурец, помидор, салат",
+        weight: "235",
+        price: "199"
+    }, {
+        title: "Тортилья с беконом",
+        type: "Роллы в торитлье",
+        picture: "/rolls/boston.jpg",
+        decription: "Сырная тортилья, сыр сливочный, бекон, помидор, перец, салат",
+        weight: "235",
+        price: "199"
+    }, {
+        title: "Тортилья с курицей",
+        type: "Роллы в торитлье",
+        picture: "/rolls/boston.jpg",
+        decription: "Сырная тортилья, сыр сливочный, курица, огурец, помидор, салат",
+        weight: "235",
+        price: "169"
+    }, {
+        title: "Тортилья с овощами",
+        type: "Роллы в торитлье",
+        picture: "/rolls/boston.jpg",
+        decription: "Сырная тортилья, сыр сливочный, овощи",
+        weight: "235",
+        price: "169"
+    }],
+    omlet: [{
+        title: "Принт",
+        type: "Роллы в японском омлете",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр сливочный, лосось копченый, авокадо, омлет японский, салат, нори",
+        weight: "230",
+        price: "159"
+    }, {
+        title: "Тамаго эби маки",
+        type: "Роллы в японском омлете",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр ливочный, тигровая креветка, омлет японский, нори",
+        weight: "230",
+        price: "199"
+    }, {
+        title: "Вегас",
+        type: "Роллы в японском омлете",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр ливочный, угорь, огурец, авокадо, омлет японский, соус спайси, нори",
+        weight: "240",
+        price: "169"
+    }, {
+        title: "Куцу",
+        type: "Роллы в японском омлете",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр ливочный, курица, помидор, омлет японский, салат, нори",
+        weight: "240",
+        price: "149"
+    }, {
+        title: "Филадельфия в омлете",
+        type: "Роллы в японском омлете",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр ливочный, авокадо, омлет японский, тобико, нори",
+        weight: "220",
+        price: "129"
+    }, {
+        title: "Чакин икура",
+        type: "Роллы в японском омлете",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, сыр ливочный, омлет японский, икра лосося, нори",
+        weight: "220",
+        price: "209"
+    }],
+    sushi: [{
+        title: "Сяке",
+        type: "Суши",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, слабосоленый лосось",
+        weight: "35",
+        price: "39"
+    },
+    {
+        title: "Унаги",
+        type: "Суши",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, угорь, нори",
+        weight: "35",
+        price: "59"
+    },
+    {
+        title: "Эби",
+        type: "Суши",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, тигровая креветка",
+        weight: "35",
+        price: "69"
+    }],
+    salats: [{
+        title: "Умисай гюнику",
+        type: "Салаты",
+        picture: "/rolls/boston.jpg",
+        decription: "Острая говядина, болгарский перец, грибы, морковь, лук, перец цили, чеснок",
+        weight: "200",
+        price: "209"
+    },
+    {
+        title: "Сяки сарада",
+        type: "Салаты",
+        picture: "/rolls/boston.jpg",
+        decription: "Пеконская капуста, салат, помидор, лук, морковь, слабосоленый лосось, соус",
+        weight: "200",
+        price: "229"
+    },
+    {
+        title: "Тикен сарада",
+        type: "Салаты",
+        picture: "/rolls/boston.jpg",
+        decription: "Салат, пекинская капуста, морковь, перец болгарский, помидор, лук, курица, соус",
+        weight: "210",
+        price: "199"
+    },
+    {
+        title: "Цезарь с креветкой",
+        type: "Салаты",
+        picture: "/rolls/boston.jpg",
+        decription: "Салат, помдор, сыр, яйцо, сухари, креветки, соус",
+        weight: "230",
+        price: "299"
+    },
+    {
+        title: "Цезарь с курицей",
+        type: "Салаты",
+        picture: "/rolls/boston.jpg",
+        decription: "Салат, помдор, сыр, яйцо, сухари, курица, соус",
+        weight: "230",
+        price: "189"
+    },
+    {
+        title: "Киоти",
+        type: "Салаты",
+        picture: "/rolls/boston.jpg",
+        decription: "Свиная шея, морковь, перец болгарский, лук, капуста пекинская, лист салата, кунжут, соус",
+        weight: "230",
+        price: "229"
+    }],
+    rice: [{
+        title: "Рис с креветками",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, креветки тигровые, омлет японский, соус",
+        weight: "290",
+        price: "199"
+    },
+    {
+        title: "Рис с говядиной",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, говядина, овощи, соус",
+        weight: "290",
+        price: "189"
+    },
+    {
+        title: "Рис со свининой",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, свинина, овощи, соус",
+        weight: "290",
+        price: "189"
+    },
+    {
+        title: "Рис с курицей",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, курица, овощи, соус",
+        weight: "290",
+        price: "179"
+    },
+    {
+        title: "Рис с овощами",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Рис, овощи",
+        weight: "290",
+        price: "169"
+    },
+    {
+        title: "Лапша с говядиной",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Лапша соба (гречневая), говядина, овощи",
+        weight: "229",
+        price: "300"
+    },
+    {
+        title: "Лапша со свининой",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Лапша соба (гречневая), свинина, овощи",
+        weight: "229",
+        price: "300"
+    },
+    {
+        title: "Лапша с курицей",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Лапша соба (гречневая), курица, овощи",
+        weight: "219",
+        price: "300"
+    },
+    {
+        title: "Лапша с морепродуктами",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Лапша удон, морепродукты",
+        weight: "300",
+        price: "259"
+    },
+    {
+        title: "Лапша с копченостями",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Лапша удон, копчености, сливки, перец чили",
+        weight: "300",
+        price: "219"
+    },
+    {
+        title: "Фунчоза с говядиной",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Фунчоза, говядина, овощи, соус",
+        weight: "290",
+        price: "229"
+    },
+    {
+        title: "Фунчоза со свининой",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Фунчоза, свинина, овощи, соус",
+        weight: "290",
+        price: "229"
+    },
+    {
+        title: "Фунчоза с курицей",
+        type: "Рис, лапша",
+        picture: "/rolls/boston.jpg",
+        decription: "Фунчоза, курица, овощи, соус",
+        weight: "290",
+        price: "219"
+    }],
+    sets: [{
+        title: "Набор Мини",
+        type: "Наборы",
+        picture: "/rolls/boston.jpg",
+        decription: "Калифорния 1/2, Майами 1/2, Нежный угорь 1/2",
+        weight: "12шт",
+        price: "329"
+    },
+    {
+        title: "Набор №1",
+        type: "Наборы",
+        picture: "/rolls/boston.jpg",
+        decription: "Скандинавия 1/2, Майами 1/2, Филадельфия, ролл со слабосоленым лососем, суши сяке 2шт",
+        weight: "24шт",
+        price: "749"
+    },
+    {
+        title: "Набор №2",
+        type: "Наборы",
+        picture: "/rolls/boston.jpg",
+        decription: "Ролл со слабосоленым лососем, ролл с копченым лососем, ролл с угрем, ролл с креветкой, ролл с огурцом, ролл с авокадо",
+        weight: "36 шт",
+        price: "499"
+    },
+    {
+        title: "Набор № 3",
+        type: "Наборы",
+        picture: "/rolls/boston.jpg",
+        decription: "Дракон, калифорния, аляска, филадельфия, ролл с креветкой, грин ролл, кунсей капа, унаги темпура, якудза",
+        weight: "70 шт., 4 соуса, 4 васаби, 4 имбиря",
+        price: "1899"
+    },
+    {
+        title: "Набор Ассорти",
+        type: "Наборы",
+        picture: "/rolls/boston.jpg",
+        decription: "Ролл с креветкой, аляска, дракон, калифорния",
+        weight: "30 шт., 2 соуса, 2 васаби, 2 имбиря",
+        price: "899"
+    },
+    {
+        title: "Набор Тортилья",
+        type: "Наборы",
+        picture: "/rolls/boston.jpg",
+        decription: "Тортилья с угрём, тортилья с лососем, тортилья с говядиной, тортилья с беконом, тортилья с курицей",
+        weight: "40 шт., 3 соуса, 3 васаби, 3 имбиря",
+        price: "1049"
+    },
+    {
+        title: "Набор Дракон",
+        type: "Наборы",
+        picture: "/rolls/boston.jpg",
+        decription: "Филадельфия с огурцом, скандинавия, капа хосомаки, канада, ролл с огурцом, ролл с авокадо, ролл с тунцом, ролл с сёмгой, бостон, фудзияма, куцу, принт, майами, син унаги, горячая гейша, калифорния, нежный угорь 126 шт., 7 соусов, 7 васаби, 7 имбиря",
+        weight: "126 шт., 7 соусов, 7 васаби, 7 имбиря",
+        price: "2999"
+    },
+]
+}

@@ -15,18 +15,17 @@ body {
 	max-width: 1180px;
 	margin: 95vh auto 1vh;
 	padding: 5vh 0;
-	background-color: aliceblue;
-	@include MDShadow-1
+	background-color: #efdecd
 }
 
 .container_flex-row {
-	width: 90%;
-	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	align-self: center
+	align-self: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 @include waves-light( $main-elm, $ripple-opacity);

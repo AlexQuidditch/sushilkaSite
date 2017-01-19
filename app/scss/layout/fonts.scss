@@ -18,7 +18,7 @@ $font-parametrs in
 		padding: 0;
 		margin: 0;
 		font: #{$font-parametrs};
-		color: #424242;
+		color: $grayed;
 	}
 }
 
@@ -30,7 +30,6 @@ span {
 	line-height: 1.4rem;
 	text-decoration: none;
 	word-break: normal;
-	outline: none;
 	padding: 5px 0;
 	margin: 0;
 }

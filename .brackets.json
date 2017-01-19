@@ -40,7 +40,8 @@
             "brackets-git.terminalCommand": "C:\\Program Files\\Git\\git-bash.exe",
             "brackets-git.terminalCommandArgs": "--cd=$1",
             "brackets-git.debugMode": false,
-            "me.drewh.jsbeautify.on_save": false
+            "me.drewh.jsbeautify.on_save": false,
+            "livedev.multibrowser": true
         }
     }
 }

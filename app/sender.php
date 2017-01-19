@@ -20,12 +20,13 @@ $error="no"; //флаг наличия ошибки
 
 	//Array of request parameters
 $params = array(
-'api_token'  => "9b8b547ce197e6ff8fcb783cc30c97f0",
+'api_token'  => "",
 'msg' =>
-"Новая просьба перезвонить с сайта Avon:
+"Новый заказ:
 
 Имя: $posName
 Телефон: $posPhone
+Заказано:
 
 Ваша служба доставки уведомлений :)"
 );
@@ -44,5 +45,6 @@ $context = stream_context_create(array(
 
 // Perform the request
 $response = file_get_contents("https://tg-notifcaster.rhcloud.com/api/v1/selfMessage", false, $context);
-	echo "1";
+echo ($response) ? '1' : '0';
 }
+?>

@@ -2,410 +2,957 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="author" content="Alex Quidditch">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="author" content="Alex Quidditch" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-	<meta name="yandex-verification" content="" />
-	<meta name="google-site-verification" content="" />
+    <meta name="yandex-verification" content="" />
+    <meta name="google-site-verification" content="" />
 
-	<!-- Mobile Stuff -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Remove Tap Highlight on Windows Phone IE -->
-	<meta name="msapplication-tap-highlight" content="no" />
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Remove Tap Highlight on Windows Phone IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
 
-	<!-- Chrome on Android -->
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="">
-	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
+    <!-- Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="" />
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png" />
 
-	<!-- Safari on iOS -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#">
-	<meta name="apple-mobile-web-app-title" content="">
-	<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!-- Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png" />
 
-	<!-- Windows 8 -->
-	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">
-	<meta name="msapplication-TileColor" content="">
-	<meta name="theme-color" content="">
+    <!-- Windows 8 -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png" />
+    <meta name="msapplication-TileColor" content="" />
+    <meta name="theme-color" content="" />
 
-	<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Philosopher|Playfair+Display&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Philosopher|Playfair+Display&amp;subset=cyrillic" rel="stylesheet" />
 
-	<script type="text/javascript" src="js/modernizr.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
 
-	<!--build:css css/main.min.css-->
-	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
-	<link rel="stylesheet" href="bower_components/flickity/dist/flickity.css">
-	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.css">
-	<link rel="stylesheet" href="bower_components/Waves/dist/waves.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-	<!--endbuild-->
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="bower_components/flickity/dist/flickity.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.css" />
+    <link rel="stylesheet" href="bower_components/Waves/dist/waves.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!--endbuild-->
 
 </head>
 
 <body id="body">
 
-	<div id="wrapper" class="wrapper">
+    <div id="cart" class="cart is-filled">
 
-		<header id="header" class="header">
+        <div id="cart__header" class="cart__header">
+            <h4 class="cart__header-title">Корзина</h4>
+            <span class="cart__close">
+                <a
+                id="cart__close"
+                class="cart__close-button"
+                href="#"
+                ripple-dark
+                >
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+        </span>
 
-			<div id="flickity" class="slider">
+        </div>
 
-				<div class="carousel-cell">
+        <div id="cart__body" class="cart__body">
+            <div class="cart__order">
+                <button
+                id="modal__open"
+                class="cart__order-button"
+                ripple-light
+                >Оформить заказ
+                </button>
+            </div>
+        </div>
 
-					<img class="slider__slide" src="assets/img/slider/slide1.jpg" alt="">
+        <div id="cart__footer" class="cart__footer">
 
-				</div>
+            <span id="basketwidjet" class="cart__price"></span>
 
-				<div class="carousel-cell">
+            <span class="cart__open">
+                <a
+                id="cart__open"
+                class="cart__open-button"
+                href="#!"
+                >
+                <i id="cart__open-icon" class="cart__open-icon fa fa-check" aria-hidden="true"></i>
+                </a>
+            </span>
 
-					<img class="slider__slide" src="assets/img/slider/slide2.jpg" alt="">
+            <span class="cart__clear">
+                <a
+                id="cart__clear"
+                class="cart__clear-button"
+                href="#!"
+                ripple-dark
+                >
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </a>
+            </span>
 
-				</div>
+        </div>
 
-				<div class="carousel-cell">
+    </div>
 
-					<img class="slider__slide" src="assets/img/slider/slide3.jpg" alt="">
+    <div id="wrapper" class="wrapper">
 
-				</div>
+        <header id="header" class="header">
 
-				<div class="carousel-cell">
+            <div id="flickity" class="slider">
 
-					<img class="slider__slide" src="assets/img/slider/slide4.jpg" alt="">
+                <div class="carousel-cell">
 
-				</div>
+                    <img class="slider__slide" src="assets/img/slider/slide1.jpg" alt="">
 
-				<div class="carousel-cell">
+                </div>
 
-					<img class="slider__slide" src="assets/img/slider/slide5.jpg" alt="">
+                <div class="carousel-cell">
 
-				</div>
+                    <img class="slider__slide" src="assets/img/slider/slide2.jpg" alt="">
 
-				<div class="carousel-cell">
+                </div>
 
-					<img class="slider__slide" src="assets/img/slider/slide6.jpg" alt="">
+                <div class="carousel-cell">
 
-				</div>
+                    <img class="slider__slide" src="assets/img/slider/slide3.jpg" alt="">
 
-				<div class="carousel-cell">
+                </div>
 
-					<img class="slider__slide" src="assets/img/slider/slide7.jpg" alt="">
+                <div class="carousel-cell">
 
-				</div>
+                    <img class="slider__slide" src="assets/img/slider/slide4.jpg" alt="">
 
-			</div>
+                </div>
 
-		</header>
+                <div class="carousel-cell">
 
-		<aside id="sidebar" class="sidebar">
+                    <img class="slider__slide" src="assets/img/slider/slide5.jpg" alt="">
 
-			<a href="#" id="menuButton" class="menu-button" ripple-light>
-				<span class="burger-icon"></span>
-			</a>
+                </div>
 
-			<ul id="sidebar__list" class="sidebar__list">
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" class="sidebar__item_clear"></a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Роллы</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Запечённые роллы</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Темпура роллы</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Тортильи</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Темпура</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Японский омлет</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Салаты</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Лапша и рис</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Наборы</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Соусы</a>
-				</li>
-				<li class="sidebar__li">
-					<a href="#" data-roll="#" ripple-dark class="sidebar__item">&nbsp;Напитки</a>
-				</li>
-			</ul>
+                <div class="carousel-cell">
 
-		</aside>
+                    <img class="slider__slide" src="assets/img/slider/slide6.jpg" alt="">
 
-		<main id="main" class="main">
+                </div>
 
-			<section id="information" class="information">
+                <div class="carousel-cell">
 
-				<div class="container_flex-row">
+                    <img class="slider__slide" src="assets/img/slider/slide7.jpg" alt="">
 
-					<h2 class="section-title">Наши постоянные акции:<br>
+                </div>
+
+            </div>
+
+        </header>
+
+        <aside id="sidebar" class="sidebar">
+
+        <nav role="navigation">
+            <a href="#" id="menuButton" class="menu-button" ripple-light>Меню</a>
+
+            <ul id="sidebar__list" class="sidebar__list" style="border-radius: 100%">
+                <li class="sidebar__li">
+                    <a href="#" data-roll="#" class="sidebar__item_clear"></a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="rolls" ripple-dark class="sidebar__item">&nbsp;Роллы</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="baked" ripple-dark class="sidebar__item">&nbsp;Запечённые роллы</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="tempura-rolls" ripple-dark class="sidebar__item">&nbsp;Темпура роллы</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="torts" ripple-dark class="sidebar__item">&nbsp;Тортильи</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="tempura" ripple-dark class="sidebar__item">&nbsp;Темпура</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="omlet" ripple-dark class="sidebar__item">&nbsp;Японский омлет</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="sushi" ripple-dark class="sidebar__item">&nbsp;Суши</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="salats" ripple-dark class="sidebar__item">&nbsp;Салаты</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="rice" ripple-dark class="sidebar__item">&nbsp;Лапша и рис</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="sets" ripple-dark class="sidebar__item">&nbsp;Наборы</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="sauces" ripple-dark class="sidebar__item">&nbsp;Соусы</a>
+                </li>
+                <li class="sidebar__li">
+                    <a href="#" data-roll="drinks" ripple-dark class="sidebar__item">&nbsp;Напитки</a>
+                </li>
+            </ul>
+        </nav>
+
+        </aside>
+
+        <main id="main" class="main">
+
+            <section id="information" class="information">
+
+                <div class="container_flex-row">
+
+                    <h2 class="section-title">Наши постоянные акции:<br>
 				<span class="section-title__sub">Обязательно ознакомьтесь!</span></h2>
 
-					<ul class="information-list">
+                    <ul class="information-list">
 
-						<li class="information-list__card">
-							<h6 class="information-list__title">Скидка имениннику!</h6>
-							<svg class="information-list__icon" viewBox="0 0 24 24">
-								<path class="information-list__svg" d="M12,6C13.11,6 14,5.1 14,4C14,3.62 13.9,3.27 13.71,2.97L12,0L10.29,2.97C10.1,3.27 10,3.62 10,4A2,2 0 0,0 12,6M16.6,16L15.53,14.92L14.45,16C13.15,17.29 10.87,17.3 9.56,16L8.5,14.92L7.4,16C6.75,16.64 5.88,17 4.96,17C4.23,17 3.56,16.77 3,16.39V21A1,1 0 0,0 4,22H20A1,1 0 0,0 21,21V16.39C20.44,16.77 19.77,17 19.04,17C18.12,17 17.25,16.64 16.6,16M18,9H13V7H11V9H6A3,3 0 0,0 3,12V13.54C3,14.62 3.88,15.5 4.96,15.5C5.5,15.5 6,15.3 6.34,14.93L8.5,12.8L10.61,14.93C11.35,15.67 12.64,15.67 13.38,14.93L15.5,12.8L17.65,14.93C18,15.3 18.5,15.5 19.03,15.5C20.11,15.5 21,14.62 21,13.54V12A3,3 0 0,0 18,9Z" />
-							</svg>
-							<span class="information-list__text">
+                        <li class="information-list__card">
+                            <h6 class="information-list__title">Скидка имениннику!</h6>
+                            <svg class="information-list__icon" viewBox="0 0 24 24">
+                                <path class="information-list__svg" d="M12,6C13.11,6 14,5.1 14,4C14,3.62 13.9,3.27 13.71,2.97L12,0L10.29,2.97C10.1,3.27 10,3.62 10,4A2,2 0 0,0 12,6M16.6,16L15.53,14.92L14.45,16C13.15,17.29 10.87,17.3 9.56,16L8.5,14.92L7.4,16C6.75,16.64 5.88,17 4.96,17C4.23,17 3.56,16.77 3,16.39V21A1,1 0 0,0 4,22H20A1,1 0 0,0 21,21V16.39C20.44,16.77 19.77,17 19.04,17C18.12,17 17.25,16.64 16.6,16M18,9H13V7H11V9H6A3,3 0 0,0 3,12V13.54C3,14.62 3.88,15.5 4.96,15.5C5.5,15.5 6,15.3 6.34,14.93L8.5,12.8L10.61,14.93C11.35,15.67 12.64,15.67 13.38,14.93L15.5,12.8L17.65,14.93C18,15.3 18.5,15.5 19.03,15.5C20.11,15.5 21,14.62 21,13.54V12A3,3 0 0,0 18,9Z" />
+                            </svg>
+                            <span class="information-list__text">
 								В день рождения дарим скидку 15%!
-								Акция действует в течение 5 дней: день до, в день рождения и три дня после него.</span>
-						</li>
+								Скидка действует в течение 5 дней: за день до, в день рождения и три дня после него.</span>
+                        </li>
 
-						<li class="information-list__card">
-							<h6 class="information-list__title">Горячий час!</h6>
-							<svg class="information-list__icon" viewBox="0 0 24 24">
-								<path class="information-list__svg" d="M3,17V7H5V17H3M19,17V7H21V17H19M22,9H24V15H22V9M0,15V9H2V15H0M17.96,11.97C17.96,13.87 17.07,15.57 15.68,16.67L14.97,20.95H9L8.27,16.67C6.88,15.57 6,13.87 6,11.97C6,10.07 6.88,8.37 8.27,7.28L9,3H14.97L15.68,7.28C17.07,8.37 17.96,10.07 17.96,11.97M7.5,11.97C7.5,14.45 9.5,16.46 11.97,16.46A4.49,4.49 0 0,0 16.46,11.97C16.46,9.5 14.45,7.5 11.97,7.5A4.47,4.47 0 0,0 7.5,11.97Z" />
-							</svg>
-							<span class="information-list__text">
+                        <li class="information-list__card">
+                            <h6 class="information-list__title">Горячий час!</h6>
+                            <svg class="information-list__icon" viewBox="0 0 24 24">
+                                <path class="information-list__svg" d="M3,17V7H5V17H3M19,17V7H21V17H19M22,9H24V15H22V9M0,15V9H2V15H0M17.96,11.97C17.96,13.87 17.07,15.57 15.68,16.67L14.97,20.95H9L8.27,16.67C6.88,15.57 6,13.87 6,11.97C6,10.07 6.88,8.37 8.27,7.28L9,3H14.97L15.68,7.28C17.07,8.37 17.96,10.07 17.96,11.97M7.5,11.97C7.5,14.45 9.5,16.46 11.97,16.46A4.49,4.49 0 0,0 16.46,11.97C16.46,9.5 14.45,7.5 11.97,7.5A4.47,4.47 0 0,0 7.5,11.97Z" />
+                            </svg>
+                            <span class="information-list__text">
 							С понедельника по пятницу с 12:00 до 14:00 сделай заказ и получи скидку 10%*
 							</span>
-						</li>
+                        </li>
 
-						<li class="information-list__card">
-							<h6 class="information-list__title">Подарок!</h6>
-							<svg class="information-list__icon" viewBox="0 0 24 24">
-								<path class="information-list__svg" d="M22,12V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V12A1,1 0 0,1 1,11V8A2,2 0 0,1 3,6H6.17C6.06,5.69 6,5.35 6,5A3,3 0 0,1 9,2C10,2 10.88,2.5 11.43,3.24V3.23L12,4L12.57,3.23V3.24C13.12,2.5 14,2 15,2A3,3 0 0,1 18,5C18,5.35 17.94,5.69 17.83,6H21A2,2 0 0,1 23,8V11A1,1 0 0,1 22,12M4,20H11V12H4V20M20,20V12H13V20H20M9,4A1,1 0 0,0 8,5A1,1 0 0,0 9,6A1,1 0 0,0 10,5A1,1 0 0,0 9,4M15,4A1,1 0 0,0 14,5A1,1 0 0,0 15,6A1,1 0 0,0 16,5A1,1 0 0,0 15,4M3,8V10H11V8H3M13,8V10H21V8H13Z" />
-							</svg>
-							<span class="information-list__text">
+                        <li class="information-list__card">
+                            <h6 class="information-list__title">Подарок!</h6>
+                            <svg class="information-list__icon" viewBox="0 0 24 24">
+                                <path class="information-list__svg" d="M22,12V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V12A1,1 0 0,1 1,11V8A2,2 0 0,1 3,6H6.17C6.06,5.69 6,5.35 6,5A3,3 0 0,1 9,2C10,2 10.88,2.5 11.43,3.24V3.23L12,4L12.57,3.23V3.24C13.12,2.5 14,2 15,2A3,3 0 0,1 18,5C18,5.35 17.94,5.69 17.83,6H21A2,2 0 0,1 23,8V11A1,1 0 0,1 22,12M4,20H11V12H4V20M20,20V12H13V20H20M9,4A1,1 0 0,0 8,5A1,1 0 0,0 9,6A1,1 0 0,0 10,5A1,1 0 0,0 9,4M15,4A1,1 0 0,0 14,5A1,1 0 0,0 15,6A1,1 0 0,0 16,5A1,1 0 0,0 15,4M3,8V10H11V8H3M13,8V10H21V8H13Z" />
+                            </svg>
+                            <span class="information-list__text">
 								При заказе от 1500 руб. в подарок игристый напиток!
 							</span>
-						</li>
+                        </li>
 
-						<li class="information-list__card">
-							<svg class="information-list__icon" viewBox="0 0 24 24">
-								<path class="information-list__svg" d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z" />
-							</svg>
-							<h6 class="information-list__title">При заказе от 500 рублей доставка по городу бесплатно!</h6>
-							<span class="information-list__text">
+                        <li class="information-list__card">
+                            <h6 class="information-list__title">Бесплатная доставка!</h6>
+                            <svg class="information-list__icon" viewBox="0 0 24 24">
+                                <path class="information-list__svg" d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z" />
+                            </svg>
+                            <span class="information-list__text">
 								При заказе от 500 рублей доставка по городу бесплатно!
 							</span>
-						</li>
-					</ul>
+                        </li>
+                    </ul>
 
-					<span class="information__additional">* Акция не действует в выходные и праздничные дни.</span>
+                    <span class="information__additional">* Акция не действует в выходные и праздничные дни.</span>
 
-				</div>
+                </div>
 
-			</section>
+            </section>
 
-			<section id="catalogue" class="catalogue">
+            <section id="rolls" class="rolls">
 
-				<ul class="container_flex-row">
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Вега</h6>
+                        <img class="product__image" src="assets/img/rolls/vega.jpg" alt="ролл Вега">
+                        <span class="product__description">Рис, нори, кунжут, огурец, авокадо, хияше вакаме</span>
+                        <span class="product__weight">210 г.</span>
+                        <button id="wicartbutton_001" class="product__order" onclick="cart.addToCart(this, '001', priceList['001'])">
+                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
+                        </button>
+                    </li>
 
-					<li class="product" ripple-dark>
-						<h6 class="product__title">Калифорния</h6>
-						<img class="product__image" src="assets/img/california.png" alt="ролл Калифорния">
-						<span class="product__description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Amet neque voluptate doloribus dolorem,
-							nostrum porro debitis magni error dolores incidunt eveniet maiores consequatur facere aut placeat optio ex deserunt unde.</span>
-						<button class="product__order">
-							<span class="product__order-price" data-hover="Добавлено!">299 р.</span>
-						</button>
-					</li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Гари</h6>
+                        <img class="product__image" src="assets/img/rolls/gari.jpg" alt="ролл Гари">
+                        <span class="product__description">Рис, нори, крабовые палочки, икра летучей рыбы, лосось, авокадо</span>
+                        <span class="product__weight">200 г.</span>
+                        <button id="wicartbutton_002" class="product__order" onclick="cart.addToCart(this, '002', priceList['002'])">
+                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
+                        </button>
+                    </li>
 
-					<li class="product" ripple-dark>
-						<h6 class="product__title">Калифорния</h6>
-						<img class="product__image" src="assets/img/california.png" alt="ролл Калифорния">
-						<span class="product__description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Amet neque voluptate doloribus dolorem,
-							nostrum porro debitis magni error dolores incidunt eveniet maiores consequatur facere aut placeat optio ex deserunt unde.</span>
-						<button class="product__order">
-							<span class="product__order-price" data-hover="Добавлено!">299 р.</span>
-						</button>
-					</li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Капа хосомаки</h6>
+                        <img class="product__image" src="assets/img/rolls/kapa-hosomaki.jpg" alt="ролл Капа хосомаки">
+                        <span class="product__description">Рис, огурец, нори, кунжут</span>
+                        <span class="product__weight">150 г.</span>
+                        <button id="wicartbutton_003" class="product__order" onclick="cart.addToCart(this, '003', priceList['003'])">
+                            <span class="product__order-price" data-focus="Добавлено!">99 р</span>
+                        </button>
+                    </li>
 
-					<li class="product" ripple-dark>
-						<h6 class="product__title">Калифорния</h6>
-						<img class="product__image" src="assets/img/california.png" alt="ролл Калифорния">
-						<span class="product__description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Amet neque voluptate doloribus dolorem,
-							nostrum porro debitis magni error dolores incidunt eveniet maiores consequatur facere aut placeat optio ex deserunt unde.</span>
-						<button class="product__order">
-							<span class="product__order-price" data-hover="Добавлено!">299 р.</span>
-						</button>
-					</li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Лава</h6>
+                        <img class="product__image" src="assets/img/rolls/lava.jpg" alt="ролл Лава">
+                        <span class="product__description">Рис, нори, лосось, сливочный сыр, соус, морской гребешок, икра тобико, майонез</span>
+                        <span class="product__weight">250 г.</span>
+                        <button id="wicartbutton_004" class="product__order" onclick="cart.addToCart(this, '004', priceList['004'])">
+                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
+                        </button>
+                    </li>
 
-					<li class="product" ripple-dark>
-						<h6 class="product__title">Калифорния</h6>
-						<img class="product__image" src="assets/img/california.png" alt="ролл Калифорния">
-						<span class="product__description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Amet neque voluptate doloribus dolorem,
-							nostrum porro debitis magni error dolores incidunt eveniet maiores consequatur facere aut placeat optio ex deserunt unde.</span>
-						<button class="product__order">
-							<span class="product__order-price" data-hover="Добавлено!">299 р.</span>
-						</button>
-					</li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Нью-Йорк маки</h6>
+                        <img class="product__image" src="assets/img/rolls/new-york-maki.jpg" alt="ролл Нью-Йорк маки">
+                        <span class="product__description">Рис, нори, лосось, сливочный сыр, тобико, кунжут</span>
+                        <span class="product__weight">250 г.</span>
+                        <button id="wicartbutton_005" class="product__order" onclick="cart.addToCart(this, '005', priceList['005'])">
+                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
+                        </button>
+                    </li>
 
-					<li class="product" ripple-dark>
-						<h6 class="product__title">Калифорния</h6>
-						<img class="product__image" src="assets/img/california.png" alt="ролл Калифорния">
-						<span class="product__description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Amet neque voluptate doloribus dolorem,
-							nostrum porro debitis magni error dolores incidunt eveniet maiores consequatur facere aut placeat optio ex deserunt unde.</span>
-						<button class="product__order">
-							<span class="product__order-price" data-hover="Добавлено!">299 р.</span>
-						</button>
-					</li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Грин ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/green-roll.jpg" alt="ролл Грин ролл">
+                        <span class="product__description">Рис, нори, сыр Кремета, курица, помидор, соус</span>
+                        <span class="product__weight">230 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">189 р</span>
+                        </button>
+                    </li>
 
-				</ul>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Сырный ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/cheese-roll.jpg" alt="ролл Сырный ролл">
+                        <span class="product__description">Рис, нори, сыр Кремета, сыр Чедар</span>
+                        <span class="product__weight">230 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">169 р</span>
+                        </button>
+                    </li>
 
-			</section>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Аляска</h6>
+                        <img class="product__image" src="assets/img/rolls/alaska.jpg" alt="ролл Аляска">
+                        <span class="product__description">Рис, нори, сливочный сыр, лосось, авокадо, креветка</span>
+                        <span class="product__weight">220 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
+                        </button>
+                    </li>
 
-		</main>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Бонита маки</h6>
+                        <img class="product__image" src="assets/img/rolls/bonito-maki.jpg" alt="ролл Бонита маки">
+                        <span class="product__description">Рис, нори, лосось, угорь, сливочный сыр, огурец, стружка тунца</span>
+                        <span class="product__weight">220 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
+                        </button>
+                    </li>
 
-		<footer id="footer" class="footer">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Кунсей капа</h6>
+                        <img class="product__image" src="assets/img/rolls/kunsei-cappa.jpg" alt="ролл Кунсей капа">
+                        <span class="product__description">Нори, рис, сливочный сыр, огурец, лосось холодного копчения, кунжут</span>
+                        <span class="product__weight">220 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
+                        </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Золотой унаги дракон</h6>
+                        <img class="product__image" src="assets/img/rolls/gold-unagi-dragon.jpg" alt="ролл Золотой унаги дракон">
+                        <span class="product__description">Рис, нори, угорь, авокадо, кунжут</span>
+                        <span class="product__weight">210 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
+                        </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Икура сомаки</h6>
+                        <img class="product__image" src="assets/img/rolls/ikura-somaki.jpg" alt="ролл Икура сомаки">
+                        <span class="product__description">Рис, нори, икра лосося, сливочный сыр</span>
+                        <span class="product__weight">210 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
+                        </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Мадагаскар</h6>
+                        <img class="product__image" src="assets/img/rolls/madagascar.jpg" alt="ролл Мадагаскар">
+                        <span class="product__description">Рис, нори, окунь жареный, икра, зелёный лук, кунжут</span>
+                        <span class="product__weight">230 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
+                        </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Майами</h6>
+                        <img class="product__image" src="assets/img/rolls/mayami.jpg" alt="ролл Майами">
+                        <span class="product__description">Рис, нори, сыр Кремета, огурец, лосось копчёный, зелень</span>
+                        <span class="product__weight">220 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
+                        </button>
+                    </li>
 
-			<div class="container_flex-row">
-				<div class="social">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Йоджи маки</h6>
+                        <img class="product__image" src="assets/img/rolls/yodghi-maki.jpg" alt="ролл Йоджи маки">
+                        <span class="product__description">Рис, нори, угорь, огурец, имбирь, сыр Кремета</span>
+                        <span class="product__weight">260 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">380 р</span>
+                        </button>
+                    </li>
 
-					<span class="social__text">Мы в соцсетях:</span>
-					<ul class="social__list">
-						<li class="social__item">
-							<a href="#" class="social__link" ripple-light><i class="fa fa-vk" aria-hidden="true"></i></a>
-						</li>
-					</ul>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">син унаги</h6>
+                        <img class="product__image" src="assets/img/rolls/sin-unagi.jpg" alt="ролл син унаги">
+                        <span class="product__description">Рис, нори, сливочный сыр, угорь, авокадо, соус унаги, майонез, кунжут</span>
+                        <span class="product__weight">220 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
+                        </button>
+                    </li>
 
-				</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Скандинавия</h6>
+                        <img class="product__image" src="assets/img/rolls/skandinavia.jpg" alt="ролл Скандинавия">
+                        <span class="product__description">Рис, нори, копчёный лосось,сливочный сыр, зелёный лук</span>
+                        <span class="product__weight">220 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
+                        </button>
+                    </li>
 
-				<div class="feedback">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Калифорния с креветкой</h6>
+                        <img class="product__image" src="assets/img/rolls/california-krevets.jpg" alt="ролл Калифорния с креветкой">
+                        <span class="product__description">Рис, нори, креветка, тобико, огурец, майонез</span>
+                        <span class="product__weight">240 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
+                        </button>
+                    </li>
 
-					<a href="#0" class="feedback__button" ripple-light>Отправить отзыв</a>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Филадельфия делюкс</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelphia-delux.jpg" alt="ролл Филадельфия делюкс">
+                        <span class="product__description">Рис, нори, лосось, японский омлет тамаго, сливочный сыр, икра</span>
+                        <span class="product__weight">270 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">289 р</span>
+                        </button>
+                    </li>
 
-				</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Тори ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/tori-roll.jpg" alt="ролл Тори ролл">
+                        <span class="product__description">Рис, нори, огурец, майонез, лук зелёный, курица, авокадо</span>
+                        <span class="product__weight">210 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">189 р</span>
+                        </button>
+                    </li>
 
-				<div class="requisites">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Саяке маки</h6>
+                        <img class="product__image" src="assets/img/rolls/sayake-maki.jpg" alt="ролл Саяке маки">
+                        <span class="product__description">Рис, нори, лосось, авокадо, копчёный угорь, огурец, кунжут, сливочный сыр</span>
+                        <span class="product__weight">250 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
+                        </button>
+                    </li>
 
-					<div class="requisites__column">
-						<ul class="requisites__list"><span class="requisites__name">ООО "Дуэт"</span>
-							<li class="requisites__item">
-								<p class="requisites__text">ИНН 2443045445</p>
-							</li>
-							<li class="requisites__item">
-								<p class="requisites__text">ОГРН 1152443000456</p>
-							</li>
-						</ul>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Хауз ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/khaz-roll.jpg" alt="ролл Хауз ролл">
+                        <span class="product__description">Рис, нори, огурец, майонез, красный окунь</span>
+                        <span class="product__weight">200 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">179 р</span>
+                        </button>
+                    </li>
 
-					</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Шахматы роллы</h6>
+                        <img class="product__image" src="assets/img/rolls/chess.jpg" alt="ролл Шахматы роллы">
+                        <span class="product__description">Рис, нори, огурец, омлет, тигровая креветка, сливочный сыр, икра капеллана, сёмга</span>
+                        <span class="product__weight">250 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
+                        </button>
+                    </li>
 
-					<div class="requisites__column">
-						<div class="requisites__icon"></div>
-						<ul class="requisites__list"><span class="requisites__name">Адрес:</span>
-							<li class="requisites__item">
-								<p class="requisites__text">г. Ачинск, мкр-он 4, д.29, пом.57</p>
-							</li>
-						</ul>
-					</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Филадельфия</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelphia-classical.jpg" alt="ролл Филадельфия">
+                        <span class="product__description">Рис, нори, сёмга, сыр Кремета</span>
+                        <span class="product__weight">220 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
+                        </button>
+                    </li>
 
-					<div class="requisites__column">
-						<ul class="requisites__list"><span class="requisites__name">Телефоны:</span>
-							<li class="requisites__item">
-								<p class="requisites__text">+7 (953) 849-39-30</p>
-							</li>
-							<li class="requisites__item">
-								<p class="requisites__text">+7 (962) 071-52-22</p>
-							</li>
-							<li class="requisites__item">
-								<p class="requisites__text">93-93-0</p>
-							</li>
-						</ul>
-					</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Цезарь ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/tsezar-roll.jpg" alt="ролл Цезарь ролл">
+                        <span class="product__description">Рис, нори, огурец, майонез, курица</span>
+                        <span class="product__weight">200 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">159 р</span>
+                        </button>
+                    </li>
 
-					<div class="requisites__column">
-						<ul class="requisites__list"><span class="requisites__name">Почта:</span>
-							<li class="requisites__item">
-								<a class="requisites__mail" href="mailto:sushilka24@mail.ru">sushilka24@mail.ru</a>
-							</li>
-							<li class="requisites__item">
-								<a class="requisites__mail" href="mailto:Vaz211483@mail.ru">Vaz211483@mail.ru</a>
-							</li>
-						</ul>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Филадельфия с луком</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelphia-green.jpg" alt="ролл Филадельфия с луком">
+                        <span class="product__description">Рис, нори, сыр Кремета, слабосолёная сёмга, зелёный лук</span>
+                        <span class="product__weight">240 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
+                        </button>
+                    </li>
 
-					</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Кавагиши</h6>
+                        <img class="product__image" src="assets/img/rolls/kawagishi.jpg" alt="ролл Кавагиши">
+                        <span class="product__description">Рис, нори, мидии, огурец, кунжут</span>
+                        <span class="product__weight">200 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">129 р</span>
+                        </button>
+                    </li>
 
-				</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Зелёный дракон</h6>
+                        <img class="product__image" src="assets/img/rolls/green-dragon.jpg" alt="ролл Зелёный дракон">
+                        <span class="product__description">Рис, нори, лосось, лук зелёный, огурец, сыр сливочный, икра капеллана, угорь копчёный, соус кабаяки</span>
+                        <span class="product__weight">250 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">299 р</span>
+                        </button>
+                    </li>
 
-			</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Гейша</h6>
+                        <img class="product__image" src="assets/img/rolls/geisha.jpg" alt="ролл Гейша">
+                        <span class="product__description">Рис, нори, сёмга, сливочный сыр, огурец</span>
+                        <span class="product__weight">210 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
+                        </button>
+                    </li>
 
-		</footer>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Инь-Янь</h6>
+                        <img class="product__image" src="assets/img/rolls/in-yan.jpg" alt="ролл Инь-Янь">
+                        <span class="product__description">Рис, нори, лосось,болагрский перец, сыр сливочный, огурец</span>
+                        <span class="product__weight">210 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">209 р</span>
+                        </button>
+                    </li>
 
-		<div class="container_flex-row">
-			<div class="webeor">
-				<a href="#0" class="webeor__link">
-					<object type="image/svg+xml" data="assets/svg/logo.svg" class="webeor__img">
-						<img src="assets/img/WebeOR-logo.png" alt="webeor-logo">
-					</object>
-					<br> Сделано с <i class="webeor__icon fa fa-heart" aria-hidden="true"></i>
-				</a>
-			</div>
-		</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Калифорния</h6>
+                        <img class="product__image" src="assets/img/rolls/california.jpg" alt="ролл Калифорния">
+                        <span class="product__description">Рис, нори, снежный краб, огурец, икра капеллана, майонез, авокадо</span>
+                        <span class="product__weight">250 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
+                        </button>
+                    </li>
 
-	</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Канада</h6>
+                        <img class="product__image" src="assets/img/rolls/canada.jpg" alt="ролл Канада">
+                        <span class="product__description">Рис, нори, лосось, авокадо, кунжут, соус унаги, сыр сливочный</span>
+                        <span class="product__weight">260 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
+                        </button>
+                    </li>
 
-	<div id="overlay" class="overlay"></div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Нежный угорь</h6>
+                        <img class="product__image" src="assets/img/rolls/sweet-ugor.jpg" alt="ролл Нежный угорь">
+                        <span class="product__description">Рис, нори, лосось, болгарский перец, сыр сливочный, огурец</span>
+                        <span class="product__weight">230 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
+                        </button>
+                    </li>
 
-	<div id="modal" class="modal__window">
-		<form action="" method="post" class="form">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Планета маки</h6>
+                        <img class="product__image" src="assets/img/rolls/maki-planet.jpg" alt="ролл Планета маки">
+                        <span class="product__description">Рис, нори, слабосолёный лосоь, такуан, сыр Кремета, салат</span>
+                        <span class="product__weight">210 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
+                        </button>
+                    </li>
 
-			<div class="form__name">
-				<label for="name">
-					<input class="input" id="posName" value="" type="text" name="name" pattern="[a-zA-Zа-яА-Я]{4,}" placeholder="Введите ваше имя" required>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Онигара</h6>
+                        <img class="product__image" src="assets/img/rolls/onigara.jpg" alt="ролл Онигара">
+                        <span class="product__description">Рис, нори, угорь, такуан, сыр Кремета, соус унаги, кунжут</span>
+                        <span class="product__weight">250 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">299 р</span>
+                        </button>
+                    </li>
 
-					<span class="input__hint">Например: Мария</span>
-				</label>
-			</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Саяке унаги маки</h6>
+                        <img class="product__image" src="assets/img/rolls/sayake-unagi-maki.jpg" alt="ролл Саяке унаги маки">
+                        <span class="product__description">Рис, нори, сёмга, угорь, сливочный сыр, огурец, тобико, кунжут</span>
+                        <span class="product__weight">240 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
+                        </button>
+                    </li>
 
-			<div class="form__phone">
-				<label for="phone">
-					<input class="input" id="posPhone" value="" type="tel" name="phone" pattern="[0-9]{9,20}" placeholder="Введите номер телефона" required>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Филадельфия с огурцом</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelphia-ogurets.jpg" alt="ролл Филадельфия с огурцом">
+                        <span class="product__description">Рис, нори, лосось, сыр Кремета, огурец</span>
+                        <span class="product__weight">240 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
+                        </button>
+                    </li>
 
-					<span class="input__hint">Например: 80138297826</span>
-				</label>
-			</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Унаги ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/unagi-roll.jpg" alt="ролл Унаги ролл">
+                        <span class="product__description">Рис, нори, кунжут, огурец, угорь</span>
+                        <span class="product__weight">220 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
+                        </button>
+                    </li>
 
-			<div class="form__submit">
-				<input class="input__submit" type="submit" id="send" value="Отправить" />
-			</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Унаги маки ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/unagi-maki.jpg" alt="ролл Унаги маки ролл">
+                        <span class="product__description">Рис, нори, огурец, копчёный угорь, кунжут, соус кабаяки</span>
+                        <span class="product__weight">200 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">189 р</span>
+                        </button>
+                    </li>
 
-		</form>
-	</div>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Унаги тидзу</h6>
+                        <img class="product__image" src="assets/img/rolls/unagi-titzu.jpg" alt="ролл Унаги тидзу">
+                        <span class="product__description">Рис, нори, сливочный сыр, угорь, огурец, лосось</span>
+                        <span class="product__weight">250 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
+                        </button>
+                    </li>
 
-	<!--build:js js/main.min.js -->
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/velocity/velocity.js"></script>
-	<script src="bower_components/velocity/velocity.ui.js"></script>
-	<script src="bower_components/flickity/dist/flickity.pkgd.js"></script>
-	<script src="bower_components/sweetalert2/dist/sweetalert2.js"></script>
-	<script src="bower_components/Waves/dist/waves.js"></script>
-	<script src="js/base.js"></script>
-	<script src="js/modal.js"></script>
-	<script src="js/main.js"></script>
-	<!-- endbuild -->
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Фудзияма</h6>
+                        <img class="product__image" src="assets/img/rolls/phudziyama.jpg" alt="ролл Фудзияма">
+                        <span class="product__description">Рис, нори, мидии, омлёт, угорь, огурец, сливочный сыр</span>
+                        <span class="product__weight">260 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
+                        </button>
+                    </li>
+
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Экспресс</h6>
+                        <img class="product__image" src="assets/img/rolls/express.jpg" alt="ролл Экспресс">
+                        <span class="product__description">Рис, нори, куриное филе, свежий огурец, кунжут белый и чёрный, сливочный сыр, икра</span>
+                        <span class="product__weight">260 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
+                        </button>
+                    </li>
+
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Филадельфия с креветкой</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelphia-crevets.jpg" alt="ролл Филадельфия с креветкой">
+                        <span class="product__description">Рис, нори, сыр Кремета, креветка, слабосолёный лосось</span>
+                        <span class="product__weight">230 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
+                        </button>
+                    </li>
+
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Якудза</h6>
+                        <img class="product__image" src="assets/img/rolls/yakudza.jpg" alt="ролл Якудза">
+                        <span class="product__description">Рис, нори, соус спайс, тигровая креветка, пекинская капуста, икра капеллана, зелёный лук, кунжут</span>
+                        <span class="product__weight">210 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">269 р</span>
+                        </button>
+                    </li>
+
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Норт ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/north-roll.jpg" alt="ролл Норт ролл">
+                        <span class="product__description">Рис, нори, кунжут, сыр Кремета, тобика, угорь, сёмга, японский майонез</span>
+                        <span class="product__weight">250 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
+                        </button>
+                    </li>
+
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Окинава</h6>
+                        <img class="product__image" src="assets/img/rolls/okinava.jpg" alt="ролл Окинава">
+                        <span class="product__description">Рис, нори, омлет, огурец, соус, сёмга, морской гребешок, японский майонез</span>
+                        <span class="product__weight">230 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
+                        </button>
+                    </li>
+
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Унаги филадельфия</h6>
+                        <img class="product__image" src="assets/img/rolls/.jpg" alt="ролл Унаги филадельфия">
+                        <span class="product__description">Рис, нори, сливочный сыр, огурец, угорь, тобика</span>
+                        <span class="product__weight">240 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">269 р</span>
+                        </button>
+                    </li>
+
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Гурмэ маки</h6>
+                        <img class="product__image" src="assets/img/rolls/gurme-maki.jpg" alt="ролл Гурмэ маки">
+                        <span class="product__description">Рис, нори, сливочный сыр, тунец, сёмга, лук зелёный</span>
+                        <span class="product__weight">210 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
+                        </button>
+                    </li>
+
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Бука</h6>
+                        <img class="product__image" src="assets/img/rolls/buka.jpg" alt="ролл Бука">
+                        <span class="product__description">Рис, нори, мидии, болгарский перец, кунжут, чесночный соус</span>
+                        <span class="product__weight">200 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">129 р</span>
+                        </button>
+                    </li>
+
+                    <li class="product" ripple-dark>
+                        <h6 class="product__title">Бостон</h6>
+                        <img class="product__image" src="assets/img/rolls/boston.jpg" alt="ролл Бостон">
+                        <span class="product__description">Тунец, авокадо, кунжут, тобико, рис, нори</span>
+                        <span class="product__weight">210 г.</span>
+                        <button class="product__order">
+                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </main>
+
+        <footer id="footer" class="footer">
+
+            <div class="container_flex-row">
+
+                <div class="social">
+
+                    <span class="social__text">Мы в соцсетях:</span>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link" ripple-light><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="feedback">
+
+                    <a class="feedback__button" href="mailto:Vaz211483@mail.ru" ripple-light>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        &nbsp;Отправить отзыв
+                    </a>
+
+                </div>
+
+                <div class="requisites">
+
+                    <div class="requisites__column">
+                        <ul class="requisites__list"><span class="requisites__name">ООО "Дуэт"</span>
+                            <li class="requisites__item">
+                                <p class="requisites__text">ИНН 2443045445</p>
+                            </li>
+                            <li class="requisites__item">
+                                <p class="requisites__text">ОГРН 1152443000456</p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="requisites__column">
+                        <div class="requisites__icon"></div>
+                        <ul class="requisites__list"><span class="requisites__name">Адрес:</span>
+                            <li class="requisites__item">
+                                <p class="requisites__text">г. Ачинск, мкр-он 4, д.29, пом.57</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="requisites__column">
+                        <ul class="requisites__list"><span class="requisites__name">Телефоны:</span>
+                            <li class="requisites__item">
+                                <p class="requisites__text">+7 (953) 849-39-30</p>
+                            </li>
+                            <li class="requisites__item">
+                                <p class="requisites__text">+7 (962) 071-52-22</p>
+                            </li>
+                            <li class="requisites__item">
+                                <p class="requisites__text">93-93-0</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="requisites__column">
+                        <ul class="requisites__list"><span class="requisites__name">Почта:</span>
+                            <li class="requisites__item">
+                                <a class="requisites__mail" title="Напишите нам :)">Vaz211483@mail.ru</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="webeor">
+                    <a href="#0" class="webeor__link">
+                        <object type="image/svg+xml" data="assets/svg/logo.svg" class="webeor__img">
+                            <img src="assets/img/WebeOR-logo.png" alt="webeor-logo">
+                        </object>
+                        <br> Сделано с <i class="webeor__icon fa fa-heart" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+     <div id="modal" class="modal is-visible ">
+
+        <div class="modal__header">
+            <h4 class="modal__header-title">Оформить заказ:</h4>
+            <span class="modal__close">
+                <a
+                id="modal__close"
+                class="modal__close-button"
+                href="#"
+                ripple-dark
+                >
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+            </span>
+        </div>
+
+        <div class="modal__body">
+
+            <form id="formToSend" class="form">
+
+                <div class="form__row">
+                    <i class="form__icon fa fa-fw fa-user-circle" aria-hidden="true"></i>
+                    <input
+                    id="fio"
+                    type="text"
+                    class="form__input"
+                    placeholder="Ваше имя"
+                    >
+                </div>
+
+                <div class="form__row">
+                    <i class="form__icon fa fa-fw fa-phone" aria-hidden="true"></i>
+                    <input
+                    id="phone"
+                    type="tel"
+                    class="form__input"
+                    placeholder="Номер телефона"
+                    >
+                </div>
+
+                <div class="form__row">
+                    <i class="form__icon fa fa-fw fa-home" aria-hidden="true"></i>
+                    <input
+                    id="fio"
+                    type="text"
+                    class="form__input"
+                    placeholder="Адрес"
+                    >
+                </div>
+
+                <div class="form__row">
+                    <i class="form__icon fa fa-fw fa-pencil" aria-hidden="true"></i>
+                    <textarea
+                    id="question"
+                    class="form__textarea"
+                    placeholder="Есть карта Сушилки или Greenlight? Заказ ко дню рождения?"
+                    ></textarea>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="modal__footer">
+            <button
+                id="send"
+                class="modal__send"
+                onclick="cart.sendOrder('formToSend,overflw,bsum');"
+                href="#"
+                ripple-dark
+                >
+                <i class="modal__icon fa fa-fw fa-paper-plane" aria-hidden="true"></i>
+                &nbsp;&nbsp;Отправить заказ
+            </button>
+        </div>
+
+     </div>
+
+    <!--build:js js/main.min.js -->
+    <script type="text/javascript" src="bower_components/velocity/velocity.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/flickity/dist/flickity.pkgd.js"></script>
+    <script type="text/javascript" src="bower_components/sweetalert2/dist/sweetalert2.js"></script>
+    <script type="text/javascript" src="bower_components/Waves/dist/waves.js"></script>
+    <script type="text/javascript" src="../node_modules/object-fit-images/dist/ofi.js"></script>
+
+    <script type="text/javascript" src="js/wicart.js"></script>
+
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- endbuild -->
 
 </body>
 

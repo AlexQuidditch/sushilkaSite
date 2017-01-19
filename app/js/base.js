@@ -1,10 +1,5 @@
 $(document).ready(function () {
 
-	$('#slider').flickity({
-		cellAlign: 'center',
-		contain: true
-	});
-
 	$('[data-roll]').on('click', function (e) {
 		e.preventDefault();
 		var

@@ -5,78 +5,69 @@
 @import "../libs/burger";
 
 .menu-button {
-	position: fixed;
-	display: inline-block;
-	z-index: 100;
-	left: 50%;
-	top: -22px;
-	padding: 22px 16px;
-	background-color: $second-elm;
-	@include MDShadow-3;
-	border-radius: 50%;
-	transform: translateX(-50%);
-	transition: .5s ease;
-	&.is-active {
-		@include MDShadow-5
-	}
-}
+    position: fixed;
+    display: inline-block;
+    z-index: 100;
+    left: 50%;
+    top: -15px;
+    padding: 24px 14.65px;
+    color: $main-elm;
+    background-color: $second-elm;
+    border-radius: 50%;
+    @include MDShadow-3;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
 
-.burger-icon {
-	@include burger(30px, 3px, 5px, $main-elm);
-}
-
-.menu-button.is-active .burger-icon {
-	@include burger-to-cross;
+    &.is-active {
+        @include MDShadow-5
+    }
 }
 
 .sidebar {
-	z-index: $header-zindex;
-	position: fixed;
-	text-align: center;
-	width: 200px;
-	@include center($xy: y);
-	left: 1vw;
-	&__list {
-		display: inline-block;
-		overflow: hidden;
-		width: 0;
-		height: 20px;
-		background-color: white;
-		@include MDShadow-2;
-		transition: width .5s ease-in-out 0s, height 1s ease-in-out .75s;
-		&.is-active {
-			width: 200px;
-			height: 576px;
-			@include MDShadow-5;
-		}
-	}
-	&__item {
-		text-align: left;
-		display: block;
-		padding: 10px 0 10px 15px;
-		font-family: $second-font;
-		font-size: 18px;
-		line-height: 28px;
-		text-decoration: none;
-		white-space: nowrap;
-		color: $second-elm;
-		box-shadow: none;
-		transition: .2s ease-in-out, opacity .2s ease-in-out 2s;
-		&:hover {
-			@include MDShadow-2;
-		}
-		&_clear {
-			text-align: left;
-			display: block;
-			height: 48px;
-			font-family: $second-font;
-			font-size: 18px;
-			line-height: 28px;
-			text-decoration: none;
-			white-space: nowrap;
-			color: $second-elm;
-			box-shadow: none;
-			cursor: auto;
-		}
-	}
+    z-index: $header-zindex;
+    position: fixed;
+    @include center($xy: y);
+    text-align: center;
+    width: 200px;
+    left: 1vw;
+
+    &__list {
+        display: inline-block;
+        overflow: hidden;
+        width: 60px;
+        height: 35px;
+        background-color: $main-elm;
+        border-radius: 100%;
+        @include MDShadow-5
+    }
+
+    &__item {
+        text-align: left;
+        display: block;
+        padding: 10px 0 10px 15px;
+        font: 400 1.1rem/1.3rem $second-font;
+        text-decoration: none;
+        white-space: nowrap;
+        color: $main-elm;
+        box-shadow: none;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            @include MDShadow-2;
+        }
+
+        &_clear {
+            text-align: left;
+            display: block;
+            height: 48px;
+            font-family: $second-font;
+            font-size: 18px;
+            line-height: 28px;
+            text-decoration: none;
+            white-space: nowrap;
+            color: $second-elm;
+            box-shadow: none;
+            cursor: auto;
+        }
+    }
 }
