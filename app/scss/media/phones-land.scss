@@ -2,9 +2,19 @@
 @import '../partials/_variables';
 @import '../partials/_layout';
 @import '../partials/_mixins';
+
 @include MQ(Pl) {
     .cart {
         width: 90%;
+    }
+
+    .header {
+        &__title {
+            font-size: 1.5rem
+        }
+        &__subtitle {
+            font-size: 1.5rem
+        }
     }
 
     .section-title {

@@ -18,9 +18,19 @@ body {
 	background-color: #efdecd
 }
 
+.container_flex-column {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+	align-self: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .container_flex-row {
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-content: center;
 	align-self: center;

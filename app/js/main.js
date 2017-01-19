@@ -8,8 +8,9 @@ $(document).ready(function() {
         autoPlay: 30000,
         pageDots: false,
         prevNextButtons: false,
-        lazyLoad: true,
-        wrapAround: true
+        imagesLoaded: true,
+        wrapAround: true,
+        draggable: false
     });
 });
 

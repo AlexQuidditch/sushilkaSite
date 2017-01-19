@@ -71,11 +71,7 @@
 
         <div id="cart__body" class="cart__body">
             <div class="cart__order">
-                <button
-                id="modal__open"
-                class="cart__order-button"
-                ripple-light
-                >Оформить заказ
+                <button id="modal__open" class="cart__order-button" ripple-light>Оформить заказ
                 </button>
             </div>
         </div>
@@ -112,6 +108,17 @@
     <div id="wrapper" class="wrapper">
 
         <header id="header" class="header">
+
+            <div class="header__overlay">
+
+                <div class="header__title-container">
+
+                    <h1 class="header__title">Вкуснейшие роллы и суши <br /> с доставкой на дом!</h1>
+                    <h2 class="header__subtitle">Закажите через сайт - мы приготовим и доставим за 60 минут!</h2>
+
+                </div>
+
+            </div>
 
             <div id="flickity" class="slider">
 
@@ -163,51 +170,51 @@
 
         <aside id="sidebar" class="sidebar">
 
-        <nav role="navigation">
-            <a href="#" id="menuButton" class="menu-button" ripple-light>Меню</a>
+            <nav role="navigation">
+                <a href="#" id="menuButton" class="menu-button" ripple-light>Меню</a>
 
-            <ul id="sidebar__list" class="sidebar__list" style="border-radius: 100%">
-                <li class="sidebar__li">
-                    <a href="#" data-roll="#" class="sidebar__item_clear"></a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="rolls" ripple-dark class="sidebar__item">&nbsp;Роллы</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="baked" ripple-dark class="sidebar__item">&nbsp;Запечённые роллы</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="tempura-rolls" ripple-dark class="sidebar__item">&nbsp;Темпура роллы</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="torts" ripple-dark class="sidebar__item">&nbsp;Тортильи</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="tempura" ripple-dark class="sidebar__item">&nbsp;Темпура</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="omlet" ripple-dark class="sidebar__item">&nbsp;Японский омлет</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="sushi" ripple-dark class="sidebar__item">&nbsp;Суши</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="salats" ripple-dark class="sidebar__item">&nbsp;Салаты</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="rice" ripple-dark class="sidebar__item">&nbsp;Лапша и рис</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="sets" ripple-dark class="sidebar__item">&nbsp;Наборы</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="sauces" ripple-dark class="sidebar__item">&nbsp;Соусы</a>
-                </li>
-                <li class="sidebar__li">
-                    <a href="#" data-roll="drinks" ripple-dark class="sidebar__item">&nbsp;Напитки</a>
-                </li>
-            </ul>
-        </nav>
+                <ul id="sidebar__list" class="sidebar__list" style="border-radius: 100%">
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="#" class="sidebar__item_clear"></a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="rolls" ripple-dark class="sidebar__item">&nbsp;Роллы</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="baked" ripple-dark class="sidebar__item">&nbsp;Запечённые роллы</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="tempura-rolls" ripple-dark class="sidebar__item">&nbsp;Темпура роллы</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="torts" ripple-dark class="sidebar__item">&nbsp;Тортильи</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="tempura" ripple-dark class="sidebar__item">&nbsp;Темпура</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="omlet" ripple-dark class="sidebar__item">&nbsp;Японский омлет</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="sushi" ripple-dark class="sidebar__item">&nbsp;Суши</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="salats" ripple-dark class="sidebar__item">&nbsp;Салаты</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="rice" ripple-dark class="sidebar__item">&nbsp;Лапша и рис</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="sets" ripple-dark class="sidebar__item">&nbsp;Наборы</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="sauces" ripple-dark class="sidebar__item">&nbsp;Соусы</a>
+                    </li>
+                    <li class="sidebar__li">
+                        <a href="#" data-roll="drinks" ripple-dark class="sidebar__item">&nbsp;Напитки</a>
+                    </li>
+                </ul>
+            </nav>
 
         </aside>
 
@@ -217,8 +224,8 @@
 
                 <div class="container_flex-row">
 
-                    <h2 class="section-title">Наши постоянные акции:<br>
-				<span class="section-title__sub">Обязательно ознакомьтесь!</span></h2>
+                    <h2 class="information-title">Наши постоянные акции:<br>
+			    	<span class="information-title__sub">Обязательно ознакомьтесь!</span></h2>
 
                     <ul class="information-list">
 
@@ -271,505 +278,1816 @@
 
             <section id="rolls" class="rolls">
 
+                <h2 class="section-title">Роллы:</h2>
+
                 <ul class="container_flex-row">
                     <li class="product" ripple-dark>
-                        <h6 class="product__title">Вега</h6>
+                        <h6 class="product__name">Вега</h6>
                         <img class="product__image" src="assets/img/rolls/vega.jpg" alt="ролл Вега">
-                        <span class="product__description">Рис, нори, кунжут, огурец, авокадо, хияше вакаме</span>
-                        <span class="product__weight">210 г.</span>
+                        <span class="product__description">
+            Рис, огурец, авокадо, хияше вакаме, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
                         <button id="wicartbutton_001" class="product__order" onclick="cart.addToCart(this, '001', priceList['001'])">
-                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
-                        </button>
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
                     </li>
-
                     <li class="product" ripple-dark>
-                        <h6 class="product__title">Гари</h6>
+                        <h6 class="product__name">Гари</h6>
                         <img class="product__image" src="assets/img/rolls/gari.jpg" alt="ролл Гари">
-                        <span class="product__description">Рис, нори, крабовые палочки, икра летучей рыбы, лосось, авокадо</span>
-                        <span class="product__weight">200 г.</span>
+                        <span class="product__description">
+            Рис, крабовые палочки, лосось, авокадо, тобико, нори
+        </span>
+                        <span class="product__weight">
+            200 г.
+        </span>
                         <button id="wicartbutton_002" class="product__order" onclick="cart.addToCart(this, '002', priceList['002'])">
-                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Капа хосомаки</h6>
-                        <img class="product__image" src="assets/img/rolls/kapa-hosomaki.jpg" alt="ролл Капа хосомаки">
-                        <span class="product__description">Рис, огурец, нори, кунжут</span>
-                        <span class="product__weight">150 г.</span>
-                        <button id="wicartbutton_003" class="product__order" onclick="cart.addToCart(this, '003', priceList['003'])">
-                            <span class="product__order-price" data-focus="Добавлено!">99 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Лава</h6>
-                        <img class="product__image" src="assets/img/rolls/lava.jpg" alt="ролл Лава">
-                        <span class="product__description">Рис, нори, лосось, сливочный сыр, соус, морской гребешок, икра тобико, майонез</span>
-                        <span class="product__weight">250 г.</span>
-                        <button id="wicartbutton_004" class="product__order" onclick="cart.addToCart(this, '004', priceList['004'])">
-                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Нью-Йорк маки</h6>
-                        <img class="product__image" src="assets/img/rolls/new-york-maki.jpg" alt="ролл Нью-Йорк маки">
-                        <span class="product__description">Рис, нори, лосось, сливочный сыр, тобико, кунжут</span>
-                        <span class="product__weight">250 г.</span>
-                        <button id="wicartbutton_005" class="product__order" onclick="cart.addToCart(this, '005', priceList['005'])">
-                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Грин ролл</h6>
-                        <img class="product__image" src="assets/img/rolls/green-roll.jpg" alt="ролл Грин ролл">
-                        <span class="product__description">Рис, нори, сыр Кремета, курица, помидор, соус</span>
-                        <span class="product__weight">230 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">189 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Сырный ролл</h6>
-                        <img class="product__image" src="assets/img/rolls/cheese-roll.jpg" alt="ролл Сырный ролл">
-                        <span class="product__description">Рис, нори, сыр Кремета, сыр Чедар</span>
-                        <span class="product__weight">230 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">169 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Аляска</h6>
-                        <img class="product__image" src="assets/img/rolls/alaska.jpg" alt="ролл Аляска">
-                        <span class="product__description">Рис, нори, сливочный сыр, лосось, авокадо, креветка</span>
-                        <span class="product__weight">220 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Бонита маки</h6>
-                        <img class="product__image" src="assets/img/rolls/bonito-maki.jpg" alt="ролл Бонита маки">
-                        <span class="product__description">Рис, нори, лосось, угорь, сливочный сыр, огурец, стружка тунца</span>
-                        <span class="product__weight">220 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Кунсей капа</h6>
-                        <img class="product__image" src="assets/img/rolls/kunsei-cappa.jpg" alt="ролл Кунсей капа">
-                        <span class="product__description">Нори, рис, сливочный сыр, огурец, лосось холодного копчения, кунжут</span>
-                        <span class="product__weight">220 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
-                        </button>
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
                     </li>
                     <li class="product" ripple-dark>
-                        <h6 class="product__title">Золотой унаги дракон</h6>
-                        <img class="product__image" src="assets/img/rolls/gold-unagi-dragon.jpg" alt="ролл Золотой унаги дракон">
-                        <span class="product__description">Рис, нори, угорь, авокадо, кунжут</span>
-                        <span class="product__weight">210 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
-                        </button>
-                    </li>
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Икура сомаки</h6>
-                        <img class="product__image" src="assets/img/rolls/ikura-somaki.jpg" alt="ролл Икура сомаки">
-                        <span class="product__description">Рис, нори, икра лосося, сливочный сыр</span>
-                        <span class="product__weight">210 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
-                        </button>
-                    </li>
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Мадагаскар</h6>
-                        <img class="product__image" src="assets/img/rolls/madagascar.jpg" alt="ролл Мадагаскар">
-                        <span class="product__description">Рис, нори, окунь жареный, икра, зелёный лук, кунжут</span>
-                        <span class="product__weight">230 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
-                        </button>
-                    </li>
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Майами</h6>
-                        <img class="product__image" src="assets/img/rolls/mayami.jpg" alt="ролл Майами">
-                        <span class="product__description">Рис, нори, сыр Кремета, огурец, лосось копчёный, зелень</span>
-                        <span class="product__weight">220 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Йоджи маки</h6>
-                        <img class="product__image" src="assets/img/rolls/yodghi-maki.jpg" alt="ролл Йоджи маки">
-                        <span class="product__description">Рис, нори, угорь, огурец, имбирь, сыр Кремета</span>
-                        <span class="product__weight">260 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">380 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">син унаги</h6>
-                        <img class="product__image" src="assets/img/rolls/sin-unagi.jpg" alt="ролл син унаги">
-                        <span class="product__description">Рис, нори, сливочный сыр, угорь, авокадо, соус унаги, майонез, кунжут</span>
-                        <span class="product__weight">220 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Скандинавия</h6>
-                        <img class="product__image" src="assets/img/rolls/skandinavia.jpg" alt="ролл Скандинавия">
-                        <span class="product__description">Рис, нори, копчёный лосось,сливочный сыр, зелёный лук</span>
-                        <span class="product__weight">220 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Калифорния с креветкой</h6>
-                        <img class="product__image" src="assets/img/rolls/california-krevets.jpg" alt="ролл Калифорния с креветкой">
-                        <span class="product__description">Рис, нори, креветка, тобико, огурец, майонез</span>
-                        <span class="product__weight">240 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Филадельфия делюкс</h6>
-                        <img class="product__image" src="assets/img/rolls/philadelphia-delux.jpg" alt="ролл Филадельфия делюкс">
-                        <span class="product__description">Рис, нори, лосось, японский омлет тамаго, сливочный сыр, икра</span>
-                        <span class="product__weight">270 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">289 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Тори ролл</h6>
-                        <img class="product__image" src="assets/img/rolls/tori-roll.jpg" alt="ролл Тори ролл">
-                        <span class="product__description">Рис, нори, огурец, майонез, лук зелёный, курица, авокадо</span>
-                        <span class="product__weight">210 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">189 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Саяке маки</h6>
-                        <img class="product__image" src="assets/img/rolls/sayake-maki.jpg" alt="ролл Саяке маки">
-                        <span class="product__description">Рис, нори, лосось, авокадо, копчёный угорь, огурец, кунжут, сливочный сыр</span>
-                        <span class="product__weight">250 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Хауз ролл</h6>
-                        <img class="product__image" src="assets/img/rolls/khaz-roll.jpg" alt="ролл Хауз ролл">
-                        <span class="product__description">Рис, нори, огурец, майонез, красный окунь</span>
-                        <span class="product__weight">200 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">179 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Шахматы роллы</h6>
-                        <img class="product__image" src="assets/img/rolls/chess.jpg" alt="ролл Шахматы роллы">
-                        <span class="product__description">Рис, нори, огурец, омлет, тигровая креветка, сливочный сыр, икра капеллана, сёмга</span>
-                        <span class="product__weight">250 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Филадельфия</h6>
-                        <img class="product__image" src="assets/img/rolls/philadelphia-classical.jpg" alt="ролл Филадельфия">
-                        <span class="product__description">Рис, нори, сёмга, сыр Кремета</span>
-                        <span class="product__weight">220 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Цезарь ролл</h6>
-                        <img class="product__image" src="assets/img/rolls/tsezar-roll.jpg" alt="ролл Цезарь ролл">
-                        <span class="product__description">Рис, нори, огурец, майонез, курица</span>
-                        <span class="product__weight">200 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">159 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Филадельфия с луком</h6>
-                        <img class="product__image" src="assets/img/rolls/philadelphia-green.jpg" alt="ролл Филадельфия с луком">
-                        <span class="product__description">Рис, нори, сыр Кремета, слабосолёная сёмга, зелёный лук</span>
-                        <span class="product__weight">240 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Кавагиши</h6>
-                        <img class="product__image" src="assets/img/rolls/kawagishi.jpg" alt="ролл Кавагиши">
-                        <span class="product__description">Рис, нори, мидии, огурец, кунжут</span>
-                        <span class="product__weight">200 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">129 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Зелёный дракон</h6>
-                        <img class="product__image" src="assets/img/rolls/green-dragon.jpg" alt="ролл Зелёный дракон">
-                        <span class="product__description">Рис, нори, лосось, лук зелёный, огурец, сыр сливочный, икра капеллана, угорь копчёный, соус кабаяки</span>
-                        <span class="product__weight">250 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">299 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Гейша</h6>
-                        <img class="product__image" src="assets/img/rolls/geisha.jpg" alt="ролл Гейша">
-                        <span class="product__description">Рис, нори, сёмга, сливочный сыр, огурец</span>
-                        <span class="product__weight">210 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Инь-Янь</h6>
-                        <img class="product__image" src="assets/img/rolls/in-yan.jpg" alt="ролл Инь-Янь">
-                        <span class="product__description">Рис, нори, лосось,болагрский перец, сыр сливочный, огурец</span>
-                        <span class="product__weight">210 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">209 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Калифорния</h6>
-                        <img class="product__image" src="assets/img/rolls/california.jpg" alt="ролл Калифорния">
-                        <span class="product__description">Рис, нори, снежный краб, огурец, икра капеллана, майонез, авокадо</span>
-                        <span class="product__weight">250 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Канада</h6>
-                        <img class="product__image" src="assets/img/rolls/canada.jpg" alt="ролл Канада">
-                        <span class="product__description">Рис, нори, лосось, авокадо, кунжут, соус унаги, сыр сливочный</span>
-                        <span class="product__weight">260 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">279 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Нежный угорь</h6>
-                        <img class="product__image" src="assets/img/rolls/sweet-ugor.jpg" alt="ролл Нежный угорь">
-                        <span class="product__description">Рис, нори, лосось, болгарский перец, сыр сливочный, огурец</span>
-                        <span class="product__weight">230 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Планета маки</h6>
-                        <img class="product__image" src="assets/img/rolls/maki-planet.jpg" alt="ролл Планета маки">
-                        <span class="product__description">Рис, нори, слабосолёный лосоь, такуан, сыр Кремета, салат</span>
-                        <span class="product__weight">210 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">199 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Онигара</h6>
-                        <img class="product__image" src="assets/img/rolls/onigara.jpg" alt="ролл Онигара">
-                        <span class="product__description">Рис, нори, угорь, такуан, сыр Кремета, соус унаги, кунжут</span>
-                        <span class="product__weight">250 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">299 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Саяке унаги маки</h6>
-                        <img class="product__image" src="assets/img/rolls/sayake-unagi-maki.jpg" alt="ролл Саяке унаги маки">
-                        <span class="product__description">Рис, нори, сёмга, угорь, сливочный сыр, огурец, тобико, кунжут</span>
-                        <span class="product__weight">240 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Филадельфия с огурцом</h6>
-                        <img class="product__image" src="assets/img/rolls/philadelphia-ogurets.jpg" alt="ролл Филадельфия с огурцом">
-                        <span class="product__description">Рис, нори, лосось, сыр Кремета, огурец</span>
-                        <span class="product__weight">240 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Унаги ролл</h6>
-                        <img class="product__image" src="assets/img/rolls/unagi-roll.jpg" alt="ролл Унаги ролл">
-                        <span class="product__description">Рис, нори, кунжут, огурец, угорь</span>
-                        <span class="product__weight">220 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Унаги маки ролл</h6>
-                        <img class="product__image" src="assets/img/rolls/unagi-maki.jpg" alt="ролл Унаги маки ролл">
-                        <span class="product__description">Рис, нори, огурец, копчёный угорь, кунжут, соус кабаяки</span>
-                        <span class="product__weight">200 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">189 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Унаги тидзу</h6>
-                        <img class="product__image" src="assets/img/rolls/unagi-titzu.jpg" alt="ролл Унаги тидзу">
-                        <span class="product__description">Рис, нори, сливочный сыр, угорь, огурец, лосось</span>
-                        <span class="product__weight">250 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Фудзияма</h6>
-                        <img class="product__image" src="assets/img/rolls/phudziyama.jpg" alt="ролл Фудзияма">
-                        <span class="product__description">Рис, нори, мидии, омлёт, угорь, огурец, сливочный сыр</span>
-                        <span class="product__weight">260 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">249 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Экспресс</h6>
-                        <img class="product__image" src="assets/img/rolls/express.jpg" alt="ролл Экспресс">
-                        <span class="product__description">Рис, нори, куриное филе, свежий огурец, кунжут белый и чёрный, сливочный сыр, икра</span>
-                        <span class="product__weight">260 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Филадельфия с креветкой</h6>
-                        <img class="product__image" src="assets/img/rolls/philadelphia-crevets.jpg" alt="ролл Филадельфия с креветкой">
-                        <span class="product__description">Рис, нори, сыр Кремета, креветка, слабосолёный лосось</span>
-                        <span class="product__weight">230 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Якудза</h6>
-                        <img class="product__image" src="assets/img/rolls/yakudza.jpg" alt="ролл Якудза">
-                        <span class="product__description">Рис, нори, соус спайс, тигровая креветка, пекинская капуста, икра капеллана, зелёный лук, кунжут</span>
-                        <span class="product__weight">210 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">269 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Норт ролл</h6>
-                        <img class="product__image" src="assets/img/rolls/north-roll.jpg" alt="ролл Норт ролл">
-                        <span class="product__description">Рис, нори, кунжут, сыр Кремета, тобика, угорь, сёмга, японский майонез</span>
-                        <span class="product__weight">250 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">259 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Окинава</h6>
-                        <img class="product__image" src="assets/img/rolls/okinava.jpg" alt="ролл Окинава">
-                        <span class="product__description">Рис, нори, омлет, огурец, соус, сёмга, морской гребешок, японский майонез</span>
-                        <span class="product__weight">230 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Унаги филадельфия</h6>
-                        <img class="product__image" src="assets/img/rolls/.jpg" alt="ролл Унаги филадельфия">
-                        <span class="product__description">Рис, нори, сливочный сыр, огурец, угорь, тобика</span>
-                        <span class="product__weight">240 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">269 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Гурмэ маки</h6>
-                        <img class="product__image" src="assets/img/rolls/gurme-maki.jpg" alt="ролл Гурмэ маки">
-                        <span class="product__description">Рис, нори, сливочный сыр, тунец, сёмга, лук зелёный</span>
-                        <span class="product__weight">210 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">229 р</span>
-                        </button>
-                    </li>
-
-                    <li class="product" ripple-dark>
-                        <h6 class="product__title">Бука</h6>
+                        <h6 class="product__name">Бука</h6>
                         <img class="product__image" src="assets/img/rolls/buka.jpg" alt="ролл Бука">
-                        <span class="product__description">Рис, нори, мидии, болгарский перец, кунжут, чесночный соус</span>
-                        <span class="product__weight">200 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">129 р</span>
-                        </button>
+                        <span class="product__description">
+            Рис, мидии, болгарский перец, чесночный соус, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            200 г.
+        </span>
+                        <button id="wicartbutton_003" class="product__order" onclick="cart.addToCart(this, '003', priceList['003'])">
+                <span class="product__order-price" data-focus="Добавлено!">129 р.
+            </span>
+            </button>
                     </li>
-
                     <li class="product" ripple-dark>
-                        <h6 class="product__title">Бостон</h6>
-                        <img class="product__image" src="assets/img/rolls/boston.jpg" alt="ролл Бостон">
-                        <span class="product__description">Тунец, авокадо, кунжут, тобико, рис, нори</span>
-                        <span class="product__weight">210 г.</span>
-                        <button class="product__order">
-                            <span class="product__order-price" data-focus="Добавлено!">219 р</span>
-                        </button>
+                        <h6 class="product__name">Капа хосомаки</h6>
+                        <img class="product__image" src="assets/img/rolls/kapa-hosomaki.jpg" alt="ролл Капа хосомаки">
+                        <span class="product__description">
+            Рис, огурец, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            150 г.
+        </span>
+                        <button id="wicartbutton_004" class="product__order" onclick="cart.addToCart(this, '004', priceList['004'])">
+                <span class="product__order-price" data-focus="Добавлено!">99 р.
+            </span>
+            </button>
                     </li>
-
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Лава</h6>
+                        <img class="product__image" src="assets/img/rolls/lava.jpg" alt="ролл Лава">
+                        <span class="product__description">
+            Рис, сливочный сыр, лосось жареный, соус Лава, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_005" class="product__order" onclick="cart.addToCart(this, '005', priceList['005'])">
+                <span class="product__order-price" data-focus="Добавлено!">279 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Нью-Йорк маки</h6>
+                        <img class="product__image" src="assets/img/rolls/new-york-maki.jpg" alt="ролл Нью-Йорк маки">
+                        <span class="product__description">
+            Рис, сливочный сыр, лосось холодного копчения, тобико, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_006" class="product__order" onclick="cart.addToCart(this, '006', priceList['006'])">
+                <span class="product__order-price" data-focus="Добавлено!">219 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Грин ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/green-roll.jpg" alt="ролл Грин ролл">
+                        <span class="product__description">
+            Рис, сливочный сыр, курица, помидор, салат, соус Цезарь, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_006" class="product__order" onclick="cart.addToCart(this, '006', priceList['006'])">
+                <span class="product__order-price" data-focus="Добавлено!">189 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Сырный ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/cheese-roll.jpg" alt="ролл Сырный ролл">
+                        <span class="product__description">
+            Рис, сливочный сыр, сыр Чедар, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_007" class="product__order" onclick="cart.addToCart(this, '007', priceList['007'])">
+                <span class="product__order-price" data-focus="Добавлено!">169 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Аляска</h6>
+                        <img class="product__image" src="assets/img/rolls/alaska.jpg" alt="ролл Аляска">
+                        <span class="product__description">
+            Рис, сливочный сыр, лосось холодного копчения, авокадо, креветка, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_008" class="product__order" onclick="cart.addToCart(this, '008', priceList['008'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Банито маки</h6>
+                        <img class="product__image" src="assets/img/rolls/bonito-maki.jpg" alt="ролл Банито маки">
+                        <span class="product__description">
+            Рис, сливочный сыр, огурец, угорь, стружка тунца, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_009" class="product__order" onclick="cart.addToCart(this, '009', priceList['009'])">
+                <span class="product__order-price" data-focus="Добавлено!">219 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Кунсей капа</h6>
+                        <img class="product__image" src="assets/img/rolls/kunsei-cappa.jpg" alt="ролл Кунсей капа">
+                        <span class="product__description">
+            Рис, сливочный сыр, огурец, лосось холодного копчения, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_010" class="product__order" onclick="cart.addToCart(this, '010', priceList['010'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Золотой унаги дракон</h6>
+                        <img class="product__image" src="assets/img/rolls/gold-unagi-dragon.jpg" alt="ролл Золотой унаги дракон">
+                        <span class="product__description">
+            Рис, угорь, авокадо, кунжут, нори, унаги соус
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_011" class="product__order" onclick="cart.addToCart(this, '011', priceList['011'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Икура сомаки</h6>
+                        <img class="product__image" src="assets/img/rolls/ikura-somaki.jpg" alt="ролл Икура сомаки">
+                        <span class="product__description">
+            Рис, сливочный сыр, икра лосося, нори
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_012" class="product__order" onclick="cart.addToCart(this, '012', priceList['012'])">
+                <span class="product__order-price" data-focus="Добавлено!">279 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Мадагаскар</h6>
+                        <img class="product__image" src="assets/img/rolls/madagascar.jpg" alt="ролл Мадагаскар">
+                        <span class="product__description">
+            Рис, окунь жареный, зелёный лук, тобико, кунжут, соус унаги, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_013" class="product__order" onclick="cart.addToCart(this, '013', priceList['013'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Майами</h6>
+                        <img class="product__image" src="assets/img/rolls/mayami.jpg" alt="ролл Майами">
+                        <span class="product__description">
+            Рис, сливочный сыр, огурец, лосось копчёный, укроп, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_014" class="product__order" onclick="cart.addToCart(this, '014', priceList['014'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Йоджи маки</h6>
+                        <img class="product__image" src="assets/img/rolls/yodghi-maki.jpg" alt="ролл Йоджи маки">
+                        <span class="product__description">
+            Рис, угорь, сливочный сыр, огурец, имбирь, нори
+        </span>
+                        <span class="product__weight">
+            260 г.
+        </span>
+                        <button id="wicartbutton_015" class="product__order" onclick="cart.addToCart(this, '015', priceList['015'])">
+                <span class="product__order-price" data-focus="Добавлено!">380 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Cин унаги</h6>
+                        <img class="product__image" src="assets/img/rolls/sin-unagi.jpg" alt="ролл Cин унаги">
+                        <span class="product__description">
+            Рис, сливочный сыр, угорь, авокадо, соус унаги, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_016" class="product__order" onclick="cart.addToCart(this, '016', priceList['016'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Скандинавия</h6>
+                        <img class="product__image" src="assets/img/rolls/skandinavia.jpg" alt="ролл Скандинавия">
+                        <span class="product__description">
+            Рис, сливочный сыр, копчёный лосось, зелёный лук, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_017" class="product__order" onclick="cart.addToCart(this, '017', priceList['017'])">
+                <span class="product__order-price" data-focus="Добавлено!">279 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Калифорния с креветкой</h6>
+                        <img class="product__image" src="assets/img/rolls/california-krevets.jpg" alt="ролл Калифорния с креветкой">
+                        <span class="product__description">
+            Рис, креветка, огурец, майонез, тобико, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_018" class="product__order" onclick="cart.addToCart(this, '018', priceList['018'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Филадельфия делюкс</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelphia-delux.jpg" alt="ролл Филадельфия делюкс">
+                        <span class="product__description">
+            Рис, семга, японский омлет тамаго, сливочный сыр, икра лосося, нори
+        </span>
+                        <span class="product__weight">
+            270 г.
+        </span>
+                        <button id="wicartbutton_019" class="product__order" onclick="cart.addToCart(this, '019', priceList['019'])">
+                <span class="product__order-price" data-focus="Добавлено!">289 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Тори ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/tori-roll.jpg" alt="ролл Тори ролл">
+                        <span class="product__description">
+            Рис, курица, огурец, авокадо, майонез, лук зелёный, нори
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_020" class="product__order" onclick="cart.addToCart(this, '020', priceList['020'])">
+                <span class="product__order-price" data-focus="Добавлено!">289 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Саяке маки</h6>
+                        <img class="product__image" src="assets/img/rolls/sayake-maki.jpg" alt="ролл Саяке маки">
+                        <span class="product__description">
+            Рис, сыр сливочный, лосось, авокадо, копчёный угорь, огурец, соус унаги, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_021" class="product__order" onclick="cart.addToCart(this, '021', priceList['021'])">
+                <span class="product__order-price" data-focus="Добавлено!">279 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Хауз ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/khaz-roll.jpg" alt="ролл Хауз ролл">
+                        <span class="product__description">
+            Рис, нори, огурец, майонез, красный окунь
+        </span>
+                        <span class="product__weight">
+            200 г.
+        </span>
+                        <button id="wicartbutton_022" class="product__order" onclick="cart.addToCart(this, '022', priceList['022'])">
+                <span class="product__order-price" data-focus="Добавлено!">179 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Шахматы роллы</h6>
+                        <img class="product__image" src="assets/img/rolls/chess.jpg" alt="ролл Шахматы роллы">
+                        <span class="product__description">
+            Рис, огурец, омлет, тигровая креветка, сливочный сыр, сёмга, икра тобико, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_023" class="product__order" onclick="cart.addToCart(this, '023', priceList['023'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Филадельфия</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelfia.jpg" alt="ролл Филадельфия">
+                        <span class="product__description">
+            Рис, сыр сливочный, слабосоленый лосось, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_024" class="product__order" onclick="cart.addToCart(this, '024', priceList['024'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Цезарь ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/tsezar-roll.jpg" alt="ролл Цезарь ролл">
+                        <span class="product__description">
+            Рис, курица, огурец, сыр пармезан, соус цезарь, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_025" class="product__order" onclick="cart.addToCart(this, '025', priceList['025'])">
+                <span class="product__order-price" data-focus="Добавлено!">159 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Филадельфия с луком</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelphia-green.jpg" alt="ролл Филадельфия с луком">
+                        <span class="product__description">
+            Рис, сыр сливочный, слабосолёная сёмга, зелёный лук, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_026" class="product__order" onclick="cart.addToCart(this, '026', priceList['026'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Кавагиши</h6>
+                        <img class="product__image" src="assets/img/rolls/kawagishi.jpg" alt="ролл Кавагиши">
+                        <span class="product__description">
+            Рис, мидии, огурец, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            200 г.
+        </span>
+                        <button id="wicartbutton_027" class="product__order" onclick="cart.addToCart(this, '027', priceList['027'])">
+                <span class="product__order-price" data-focus="Добавлено!">129 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Зелёный дракон</h6>
+                        <img class="product__image" src="assets/img/rolls/green-dragon.jpg" alt="ролл Зелёный дракон">
+                        <span class="product__description">
+            Рис, слабосоленый лосось, сыр сливочный, угорь, огурец, лук зеленый, икра тобико, соус унаги, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_028" class="product__order" onclick="cart.addToCart(this, '028', priceList['028'])">
+                <span class="product__order-price" data-focus="Добавлено!">299 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Гейша</h6>
+                        <img class="product__image" src="assets/img/rolls/geisha.jpg" alt="ролл Гейша">
+                        <span class="product__description">
+            Рис, сливочный сыр, слабосоленый лосось, огурец, нори
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_029" class="product__order" onclick="cart.addToCart(this, '029', priceList['029'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Инь-Янь</h6>
+                        <img class="product__image" src="assets/img/rolls/in-yan.png" alt="ролл Инь-Янь">
+                        <span class="product__description">
+            Рис, лосось, болагрский перец, сыр сливочный, огурец, нори
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_030" class="product__order" onclick="cart.addToCart(this, '030', priceList['030'])">
+                <span class="product__order-price" data-focus="Добавлено!">209 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Калифорния</h6>
+                        <img class="product__image" src="assets/img/rolls/california.jpg" alt="ролл Калифорния">
+                        <span class="product__description">
+            Рис, снежный краб, огурец, авокадо, икра тобико, майонез, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_031" class="product__order" onclick="cart.addToCart(this, '031', priceList['031'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Канада</h6>
+                        <img class="product__image" src="assets/img/rolls/canada.jpg" alt="ролл Канада">
+                        <span class="product__description">
+            Рис, сыр сливочный, копченый лосось, авокадо, кунжут, соус унаги, нори
+        </span>
+                        <span class="product__weight">
+            260 г.
+        </span>
+                        <button id="wicartbutton_032" class="product__order" onclick="cart.addToCart(this, '032', priceList['032'])">
+                <span class="product__order-price" data-focus="Добавлено!">279 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Нежный угорь</h6>
+                        <img class="product__image" src="assets/img/rolls/sweet-ugor.jpg" alt="ролл Нежный угорь">
+                        <span class="product__description">
+            Рис, сливочный сыр, угорь, авокадо, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_033" class="product__order" onclick="cart.addToCart(this, '033', priceList['033'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Планета маки</h6>
+                        <img class="product__image" src="assets/img/rolls/planeta-maki.jpg" alt="ролл Планета маки">
+                        <span class="product__description">
+            Рис, сыр сливочный, слабосолёный лосоь, такуан, салат, нори
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_034" class="product__order" onclick="cart.addToCart(this, '034', priceList['034'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Онигара</h6>
+                        <img class="product__image" src="assets/img/rolls/onigara.jpg" alt="ролл Онигара">
+                        <span class="product__description">
+            Рис, сыр сливочный, угорь, такуан, соус унаги, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_035" class="product__order" onclick="cart.addToCart(this, '035', priceList['035'])">
+                <span class="product__order-price" data-focus="Добавлено!">299 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Саяке унаги маки</h6>
+                        <img class="product__image" src="assets/img/rolls/sayake-unagi-roll.jpg" alt="ролл Саяке унаги маки">
+                        <span class="product__description">
+            Рис, сливочный сыр, огурец, слаосоленый лосось, угорь, тобико, унаги соус, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_036" class="product__order" onclick="cart.addToCart(this, '036', priceList['036'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Филадельфия с огурцом</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelfia-ogurets.jpg" alt="ролл Филадельфия с огурцом">
+                        <span class="product__description">
+            Рис, сыр сливочный, слабосоленый лосось, огурец, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_037" class="product__order" onclick="cart.addToCart(this, '037', priceList['037'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Унаги ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/unagi.jpg" alt="ролл Унаги ролл">
+                        <span class="product__description">
+            Рис, огурец, угорь, соус унаги, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_038" class="product__order" onclick="cart.addToCart(this, '038', priceList['038'])">
+                <span class="product__order-price" data-focus="Добавлено!">219 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Унаги маки ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/unagi-maki.jpg" alt="ролл Унаги маки ролл">
+                        <span class="product__description">
+            Рис, огурец, копчёный угорь, кунжут, соус унаги, нори
+        </span>
+                        <span class="product__weight">
+            200 г.
+        </span>
+                        <button id="wicartbutton_039" class="product__order" onclick="cart.addToCart(this, '039', priceList['039'])">
+                <span class="product__order-price" data-focus="Добавлено!">189 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Унаги тидзу</h6>
+                        <img class="product__image" src="assets/img/rolls/unagi-titzu.jpg" alt="ролл Унаги тидзу">
+                        <span class="product__description">
+            Рис, сливочный сыр, угорь, огурец, слабосоленый лосось, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_040" class="product__order" onclick="cart.addToCart(this, '040', priceList['040'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Фудзияма</h6>
+                        <img class="product__image" src="assets/img/rolls/phudziyama.jpg" alt="ролл Фудзияма">
+                        <span class="product__description">
+            Рис, сливочный сыр, мидии, омлёт, угорь, огурец, нори
+        </span>
+                        <span class="product__weight">
+            260 г.
+        </span>
+                        <button id="wicartbutton_041" class="product__order" onclick="cart.addToCart(this, '041', priceList['041'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Экспресс</h6>
+                        <img class="product__image" src="assets/img/rolls/express.jpg" alt="ролл Экспресс">
+                        <span class="product__description">
+            Рис, сливочный сыр, куриное филе, огурец, кунжут белый и чёрный, тобико, нори
+        </span>
+                        <span class="product__weight">
+            260 г.
+        </span>
+                        <button id="wicartbutton_042" class="product__order" onclick="cart.addToCart(this, '042', priceList['042'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Филадельфия с креветкой</h6>
+                        <img class="product__image" src="assets/img/rolls/philadelfia-krevets.jpg" alt="ролл Филадельфия с креветкой">
+                        <span class="product__description">
+            Рис, сыр сливочный, слабосолёный лосось, креветки тигровые, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_043" class="product__order" onclick="cart.addToCart(this, '043', priceList['043'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Якудза</h6>
+                        <img class="product__image" src="assets/img/rolls/yakudza.jpg" alt="ролл Якудза">
+                        <span class="product__description">
+            Рис, тигровая креветка, пекинская капуста, тобико, зелёный лук, соус спайси, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_044" class="product__order" onclick="cart.addToCart(this, '044', priceList['044'])">
+                <span class="product__order-price" data-focus="Добавлено!">269 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Норт ролл</h6>
+                        <img class="product__image" src="assets/img/rolls/north-roll.jpg" alt="ролл Норт ролл">
+                        <span class="product__description">
+            Рис, сыр сливочный, угорь, слабосоленый лосось, тобико, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_045" class="product__order" onclick="cart.addToCart(this, '045', priceList['045'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Окинава</h6>
+                        <img class="product__image" src="assets/img/rolls/okinava.jpg" alt="ролл Окинава">
+                        <span class="product__description">
+            Рис, омлет, огурец, соус с морским гребешком и слабосоленым лососем, японский майонез, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_046" class="product__order" onclick="cart.addToCart(this, '046', priceList['046'])">
+                <span class="product__order-price" data-focus="Добавлено!">219 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Унаги филадельфия</h6>
+                        <img class="product__image" src="assets/img/rolls/unagi-filadelfia.jpg" alt="ролл Унаги филадельфия">
+                        <span class="product__description">
+            Рис, сливочный сыр, огурец, угорь, тобико, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_047" class="product__order" onclick="cart.addToCart(this, '047', priceList['047'])">
+                <span class="product__order-price" data-focus="Добавлено!">269 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Гурмэ маки</h6>
+                        <img class="product__image" src="assets/img/rolls/gurme-maki.jpg" alt="ролл Гурмэ маки">
+                        <span class="product__description">
+            Рис, сливочный сыр, тунец, слабосоленый лосось, лук зелёный, нори
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_048" class="product__order" onclick="cart.addToCart(this, '048', priceList['048'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Бука</h6>
+                        <img class="product__image" src="assets/img/rolls/buka.jpg" alt="ролл Бука">
+                        <span class="product__description">
+            Рис, мидии, болгарский перец, чесночный соус, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            200 г.
+        </span>
+                        <button id="wicartbutton_049" class="product__order" onclick="cart.addToCart(this, '049', priceList['049'])">
+                <span class="product__order-price" data-focus="Добавлено!">129 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Бостон</h6>
+                        <img class="product__image" src="assets/img/rolls/boston.png" alt="ролл Бостон">
+                        <span class="product__description">
+            Рис, тунец, авокадо, кунжут, тобико, нори
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_050" class="product__order" onclick="cart.addToCart(this, '050', priceList['050'])">
+                <span class="product__order-price" data-focus="Добавлено!">219 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Ролл с огурцом</h6>
+                        <img class="product__image" src="assets/img/rolls/roll-ogurets.jpg" alt="Классические роллы Ролл с огурцом">
+                        <span class="product__description">
+            Рис, огурец, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            100 г.
+        </span>
+                        <button id="wicartbutton_051" class="product__order" onclick="cart.addToCart(this, '051', priceList['051'])">
+                <span class="product__order-price" data-focus="Добавлено!">59 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Ролл с авокадо</h6>
+                        <img class="product__image" src="assets/img/rolls/roll-avocado.jpg" alt="Классические роллы Ролл с авокадо">
+                        <span class="product__description">
+            Рис, авокадо, нори
+        </span>
+                        <span class="product__weight">
+            100 г.
+        </span>
+                        <button id="wicartbutton_052" class="product__order" onclick="cart.addToCart(this, '052', priceList['052'])">
+                <span class="product__order-price" data-focus="Добавлено!">79 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Ролл с слабосоленым лососем</h6>
+                        <img class="product__image" src="assets/img/rolls/losos-roll.jpg" alt="Классические роллы Ролл с слабосоленым лососем">
+                        <span class="product__description">
+            Рис, слабосоленый лосось, нори
+        </span>
+                        <span class="product__weight">
+            100 г.
+        </span>
+                        <button id="wicartbutton_053" class="product__order" onclick="cart.addToCart(this, '053', priceList['053'])">
+                <span class="product__order-price" data-focus="Добавлено!">89 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Ролл с лососем копченым</h6>
+                        <img class="product__image" src="assets/img/rolls/roll-semga.jpg" alt="Классические роллы Ролл с лососем копченым">
+                        <span class="product__description">
+            Рис, копченый лосось, нори
+        </span>
+                        <span class="product__weight">
+            100 г.
+        </span>
+                        <button id="wicartbutton_054" class="product__order" onclick="cart.addToCart(this, '054', priceList['054'])">
+                <span class="product__order-price" data-focus="Добавлено!">89 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Ролл с угрем</h6>
+                        <img class="product__image" src="assets/img/rolls/roll-ugor.jpg" alt="Классические роллы Ролл с угрем">
+                        <span class="product__description">
+            Рис, угорь, нори
+        </span>
+                        <span class="product__weight">
+            100 г.
+        </span>
+                        <button id="wicartbutton_055" class="product__order" onclick="cart.addToCart(this, '055', priceList['055'])">
+                <span class="product__order-price" data-focus="Добавлено!">99 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Ролл с креветкой</h6>
+                        <img class="product__image" src="assets/img/rolls/krevetka-roll.jpg" alt="Классические роллы Ролл с креветкой">
+                        <span class="product__description">
+            Рис, тигровая креветка, сыр сливочный
+        </span>
+                        <span class="product__weight">
+            100 г.
+        </span>
+                        <button id="wicartbutton_056" class="product__order" onclick="cart.addToCart(this, '056', priceList['056'])">
+                <span class="product__order-price" data-focus="Добавлено!">99 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Ролл с тунцом</h6>
+                        <img class="product__image" src="assets/img/rolls/roll-tunets.jpg" alt="Классические роллы Ролл с тунцом">
+                        <span class="product__description">
+            Рис, тунец, нори
+        </span>
+                        <span class="product__weight">
+            100 г.
+        </span>
+                        <button id="wicartbutton_057" class="product__order" onclick="cart.addToCart(this, '057', priceList['057'])">
+                <span class="product__order-price" data-focus="Добавлено!">109 р.
+            </span>
+            </button>
+                    </li>
                 </ul>
+            </section>
 
+            <section id="baked" class="baked">
+
+                <h2 class="section-title">Горячие роллы:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Запеченный лосось</h6>
+                        <img class="product__image" src="assets/img/baked/bokedlosos.jpg" alt="Запеченные роллы Запеченный лосось">
+                        <span class="product__description">
+            Рис, сыр сливочный, слабосоленый лосось, майрнез, соус спайси, тобико, нори
+        </span>
+                        <span class="product__weight">
+            270 г.
+        </span>
+                        <button id="wicartbutton_058" class="product__order" onclick="cart.addToCart(this, '058', priceList['058'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Запеченная креветка</h6>
+                        <img class="product__image" src="assets/img/baked/krevets.jpg" alt="Запеченные роллы Запеченная креветка">
+                        <span class="product__description">
+            Рис, сливочный сыр, авокадо, креветка тигровая, тобико, кунжут, соус спайси, нори
+        </span>
+                        <span class="product__weight">
+            270 г.
+        </span>
+                        <button id="wicartbutton_059" class="product__order" onclick="cart.addToCart(this, '059', priceList['059'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Запеченная филадельфия</h6>
+                        <img class="product__image" src="assets/img/baked/philadelfia.jpg" alt="Запеченные роллы Запеченная филадельфия">
+                        <span class="product__description">
+            Рис, сливочный сыр, слабосоленый лосось, соус спайси, нори
+        </span>
+                        <span class="product__weight">
+            270 г.
+        </span>
+                        <button id="wicartbutton_060" class="product__order" onclick="cart.addToCart(this, '060', priceList['060'])">
+                <span class="product__order-price" data-focus="Добавлено!">279 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Запеченные мидии</h6>
+                        <img class="product__image" src="assets/img/baked/midia.jpg" alt="Запеченные роллы Запеченные мидии">
+                        <span class="product__description">
+            Рис, сыр сливочный, снежный краб, мидии, соус спайси, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_061" class="product__order" onclick="cart.addToCart(this, '061', priceList['061'])">
+                <span class="product__order-price" data-focus="Добавлено!">189 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Запеченный гребешок</h6>
+                        <img class="product__image" src="assets/img/baked/grebeshok.jpg" alt="Запеченные роллы Запеченный гребешок">
+                        <span class="product__description">
+            Рис, слабосоленый лосось, морской гребешок, сливочный сыр, соус спайси, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_062" class="product__order" onclick="cart.addToCart(this, '062', priceList['062'])">
+                <span class="product__order-price" data-focus="Добавлено!">189 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Запеченный кальмар</h6>
+                        <img class="product__image" src="assets/img/baked/calmar.jpg" alt="Запеченные роллы Запеченный кальмар">
+                        <span class="product__description">
+            Рис, огурец, кальмар, сливочный сыр, соус спайси, майонез, кунжут, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_063" class="product__order" onclick="cart.addToCart(this, '063', priceList['063'])">
+                <span class="product__order-price" data-focus="Добавлено!">159 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Запеченный угорь</h6>
+                        <img class="product__image" src="assets/img/baked/ugor.jpg" alt="Запеченные роллы Запеченный угорь">
+                        <span class="product__description">
+            Рис, сливочный сыр, угорь, соус спайси, тобтко, майонез, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_064" class="product__order" onclick="cart.addToCart(this, '064', priceList['064'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="tempura" class="tempura">
+
+                <h2 class="section-title">Темпура:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Унаги темпура</h6>
+                        <img class="product__image" src="assets/img/tempura/unagi-tempura.jpg" alt="Горячие роллы Унаги темпура">
+                        <span class="product__description">
+            Рис, угорь, авокадо, салат, тобико, темпура, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_065" class="product__order" onclick="cart.addToCart(this, '065', priceList['065'])">
+                <span class="product__order-price" data-focus="Добавлено!">239 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Цезарь темпура</h6>
+                        <img class="product__image" src="assets/img/tempura/tsezar-roll.jpg" alt="Горячие роллы Цезарь темпура">
+                        <span class="product__description">
+            Рис, курица, помидор, соус цезарь, салат, темпура, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_066" class="product__order" onclick="cart.addToCart(this, '066', priceList['066'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Сяки спайси темпура</h6>
+                        <img class="product__image" src="assets/img/tempura/syake.jpg" alt="Горячие роллы Сяки спайси темпура">
+                        <span class="product__description">
+            Рис, лосось, огурец, соус спайси, темпура, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_067" class="product__order" onclick="cart.addToCart(this, '067', priceList['067'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Эби спайси темпура</h6>
+                        <img class="product__image" src="assets/img/tempura/abi-space-tempura.jpg" alt="Горячие роллы Эби спайси темпура">
+                        <span class="product__description">
+            Рис, тигровые креветки, соус спайси, тобико, темпура, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_068" class="product__order" onclick="cart.addToCart(this, '068', priceList['068'])">
+                <span class="product__order-price" data-focus="Добавлено!">219 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Чиз темпура</h6>
+                        <img class="product__image" src="assets/img/tempura/cheese-tempura.jpg" alt="Горячие роллы Чиз темпура">
+                        <span class="product__description">
+            Рис, сыр сливочный слабосоленый лосось, креветка тгровая, темпура, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_069" class="product__order" onclick="cart.addToCart(this, '069', priceList['069'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Горячая филадельфия</h6>
+                        <img class="product__image" src="assets/img/tempura/hot-philadelfia.jpg" alt="Горячие роллы Горячая филадельфия">
+                        <span class="product__description">
+            Рис, сыр сливочный, слабосоленый лосось, огурец, авокадо, темпура, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_070" class="product__order" onclick="cart.addToCart(this, '070', priceList['070'])">
+                <span class="product__order-price" data-focus="Добавлено!">239 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Горячая гейша</h6>
+                        <img class="product__image" src="assets/img/tempura/hot-geysha.jpg" alt="Горячие роллы Горячая гейша">
+                        <span class="product__description">
+            Рис, сыр сливочный, огурец, креветка тигровая, угорь, темпура, нори
+        </span>
+                        <span class="product__weight">
+            250 г.
+        </span>
+                        <button id="wicartbutton_071" class="product__order" onclick="cart.addToCart(this, '071', priceList['071'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Темпура тортилья с лососем</h6>
+                        <img class="product__image" src="assets/img/tempura/tempura.jpg" alt="Горячие роллы Темпура тортилья с лососем">
+                        <span class="product__description">
+            Сыр сливочный, тортилья, копченый лосось, лук зеленый, темпура
+        </span>
+                        <span class="product__weight">
+            300 г.
+        </span>
+                        <button id="wicartbutton_072" class="product__order" onclick="cart.addToCart(this, '072', priceList['072'])">
+                <span class="product__order-price" data-focus="Добавлено!">239 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Темпура тортилья с беконом</h6>
+                        <img class="product__image" src="assets/img/tempura/tempura.jpg" alt="Горячие роллы Темпура тортилья с беконом">
+                        <span class="product__description">
+            Сыр сливочный, тортилья, бекон, овощи, темпура
+        </span>
+                        <span class="product__weight">
+            300 г.
+        </span>
+                        <button id="wicartbutton_073" class="product__order" onclick="cart.addToCart(this, '073', priceList['073'])">
+                <span class="product__order-price" data-focus="Добавлено!">249 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="torts" class="torts">
+
+                <h2 class="section-title">Тортильи:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Тортилья с угрем</h6>
+                        <img class="product__image" src="assets/img/torts/ugor.jpg" alt="Роллы в торитлье Тортилья с угрем">
+                        <span class="product__description">
+            Сырная тортилья, сыр сливочный, угорь, зеленый лук
+        </span>
+                        <span class="product__weight">
+            235 г.
+        </span>
+                        <button id="wicartbutton_074" class="product__order" onclick="cart.addToCart(this, '074', priceList['074'])">
+                <span class="product__order-price" data-focus="Добавлено!">289 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Тортилья с лососем</h6>
+                        <img class="product__image" src="assets/img/torts/losos.jpg" alt="Роллы в торитлье Тортилья с лососем">
+                        <span class="product__description">
+            Сырная тортилья, сыр сливочный, копченый лосось, огурец, помидор
+        </span>
+                        <span class="product__weight">
+            235 г.
+        </span>
+                        <button id="wicartbutton_075" class="product__order" onclick="cart.addToCart(this, '075', priceList['075'])">
+                <span class="product__order-price" data-focus="Добавлено!">219 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Тортилья с говядиной</h6>
+                        <img class="product__image" src="assets/img/torts/maki-govyadina.jpg" alt="Роллы в торитлье Тортилья с говядиной">
+                        <span class="product__description">
+            Сырная тортилья, сыр сливочный, говядина, огурец, помидор, салат
+        </span>
+                        <span class="product__weight">
+            235 г.
+        </span>
+                        <button id="wicartbutton_076" class="product__order" onclick="cart.addToCart(this, '076', priceList['076'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Тортилья с беконом</h6>
+                        <img class="product__image" src="assets/img/torts/becon.jpg" alt="Роллы в торитлье Тортилья с беконом">
+                        <span class="product__description">
+            Сырная тортилья, сыр сливочный, бекон, помидор, перец, салат
+        </span>
+                        <span class="product__weight">
+            235 г.
+        </span>
+                        <button id="wicartbutton_077" class="product__order" onclick="cart.addToCart(this, '077', priceList['077'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Тортилья с курицей</h6>
+                        <img class="product__image" src="assets/img/torts/maki-kurica.jpg" alt="Роллы в торитлье Тортилья с курицей">
+                        <span class="product__description">
+            Сырная тортилья, сыр сливочный, курица, огурец, помидор, салат
+        </span>
+                        <span class="product__weight">
+            235 г.
+        </span>
+                        <button id="wicartbutton_078" class="product__order" onclick="cart.addToCart(this, '078', priceList['078'])">
+                <span class="product__order-price" data-focus="Добавлено!">169 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Тортилья с овощами</h6>
+                        <img class="product__image" src="assets/img/torts/ovoschi.jpg" alt="Роллы в торитлье Тортилья с овощами">
+                        <span class="product__description">
+            Сырная тортилья, сыр сливочный, овощи
+        </span>
+                        <span class="product__weight">
+            235 г.
+        </span>
+                        <button id="wicartbutton_079" class="product__order" onclick="cart.addToCart(this, '079', priceList['079'])">
+                <span class="product__order-price" data-focus="Добавлено!">169 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="omlet" class="omlet">
+
+                <h2 class="section-title">Роллы в японском омлете:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Принт</h6>
+                        <img class="product__image" src="assets/img/omlet/print.jpg" alt="Роллы в японском омлете Принт">
+                        <span class="product__description">
+            Рис, сыр сливочный, лосось копченый, авокадо, омлет японский, салат, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_080" class="product__order" onclick="cart.addToCart(this, '080', priceList['080'])">
+                <span class="product__order-price" data-focus="Добавлено!">159 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Тамаго эби маки</h6>
+                        <img class="product__image" src="assets/img/omlet/tamago-maki.jpg" alt="Роллы в японском омлете Тамаго эби маки">
+                        <span class="product__description">
+            Рис, сыр ливочный, тигровая креветка, омлет японский, нори
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_081" class="product__order" onclick="cart.addToCart(this, '081', priceList['081'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Вегас</h6>
+                        <img class="product__image" src="assets/img/omlet/vegas.jpg" alt="Роллы в японском омлете Вегас">
+                        <span class="product__description">
+            Рис, сыр ливочный, угорь, огурец, авокадо, омлет японский, соус спайси, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_082" class="product__order" onclick="cart.addToCart(this, '082', priceList['082'])">
+                <span class="product__order-price" data-focus="Добавлено!">169 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Куцу</h6>
+                        <img class="product__image" src="assets/img/omlet/kutsu.jpg" alt="Роллы в японском омлете Куцу">
+                        <span class="product__description">
+            Рис, сыр ливочный, курица, помидор, омлет японский, салат, нори
+        </span>
+                        <span class="product__weight">
+            240 г.
+        </span>
+                        <button id="wicartbutton_082" class="product__order" onclick="cart.addToCart(this, '082', priceList['082'])">
+                <span class="product__order-price" data-focus="Добавлено!">149 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Филадельфия в омлете</h6>
+                        <img class="product__image" src="assets/img/omlet/philadelfia-omlet.jpg" alt="Роллы в японском омлете Филадельфия в омлете">
+                        <span class="product__description">
+            Рис, сыр ливочный, авокадо, омлет японский, тобико, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_083" class="product__order" onclick="cart.addToCart(this, '083', priceList['083'])">
+                <span class="product__order-price" data-focus="Добавлено!">129 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Чакин икура</h6>
+                        <img class="product__image" src="assets/img/omlet/chakin-ikura.jpg" alt="Роллы в японском омлете Чакин икура">
+                        <span class="product__description">
+            Рис, сыр ливочный, омлет японский, икра лосося, нори
+        </span>
+                        <span class="product__weight">
+            220 г.
+        </span>
+                        <button id="wicartbutton_084" class="product__order" onclick="cart.addToCart(this, '084', priceList['084'])">
+                <span class="product__order-price" data-focus="Добавлено!">209 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="sushi" class="sushi">
+
+                <h2 class="section-title">Суши:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Сяке</h6>
+                        <img class="product__image" src="assets/img/sushi/syake-sushi.jpg" alt="Суши Сяке">
+                        <span class="product__description">
+            Рис, слабосоленый лосось
+        </span>
+                        <span class="product__weight">
+            35 г.
+        </span>
+                        <button id="wicartbutton_085" class="product__order" onclick="cart.addToCart(this, '085', priceList['085'])">
+                <span class="product__order-price" data-focus="Добавлено!">39 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Унаги</h6>
+                        <img class="product__image" src="assets/img/sushi/unagi-sushi.jpg" alt="Суши Унаги">
+                        <span class="product__description">
+            Рис, угорь, нори
+        </span>
+                        <span class="product__weight">
+            35 г.
+        </span>
+                        <button id="wicartbutton_086" class="product__order" onclick="cart.addToCart(this, '086', priceList['086'])">
+                <span class="product__order-price" data-focus="Добавлено!">59 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Эби</h6>
+                        <img class="product__image" src="assets/img/sushi/ebi-sushi.jpg" alt="Суши Эби">
+                        <span class="product__description">
+            Рис, тигровая креветка
+        </span>
+                        <span class="product__weight">
+            35 г.
+        </span>
+                        <button id="wicartbutton_086" class="product__order" onclick="cart.addToCart(this, '086', priceList['086'])">
+                <span class="product__order-price" data-focus="Добавлено!">69 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="salats" class="salats">
+
+                <h2 class="section-title">Салаты:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Умисай гюнику</h6>
+                        <img class="product__image" src="assets/img/salats/guneku.jpg" alt="Салаты Умисай гюнику">
+                        <span class="product__description">
+            Острая говядина, болгарский перец, грибы, морковь, лук, перец цили, чеснок
+        </span>
+                        <span class="product__weight">
+            200 г.
+        </span>
+                        <button id="wicartbutton_087" class="product__order" onclick="cart.addToCart(this, '087', priceList['087'])">
+                <span class="product__order-price" data-focus="Добавлено!">209 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Сяки сарада</h6>
+                        <img class="product__image" src="assets/img/salats/sarada.jpg" alt="Салаты Сяки сарада">
+                        <span class="product__description">
+            Пеконская капуста, салат, помидор, лук, морковь, слабосоленый лосось, соус
+        </span>
+                        <span class="product__weight">
+            200 г.
+        </span>
+                        <button id="wicartbutton_088" class="product__order" onclick="cart.addToCart(this, '088', priceList['088'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Тикен сарада</h6>
+                        <img class="product__image" src="assets/img/salats/sarada.jpg" alt="Салаты Тикен сарада">
+                        <span class="product__description">
+            Салат, пекинская капуста, морковь, перец болгарский, помидор, лук, курица, соус
+        </span>
+                        <span class="product__weight">
+            210 г.
+        </span>
+                        <button id="wicartbutton_089" class="product__order" onclick="cart.addToCart(this, '089', priceList['089'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Цезарь с креветкой</h6>
+                        <img class="product__image" src="assets/img/salats/tsezar-krevets.jpg" alt="Салаты Цезарь с креветкой">
+                        <span class="product__description">
+            Салат, помдор, сыр, яйцо, сухари, креветки, соус
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_090" class="product__order" onclick="cart.addToCart(this, '090', priceList['090'])">
+                <span class="product__order-price" data-focus="Добавлено!">299 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Цезарь с курицей</h6>
+                        <img class="product__image" src="assets/img/salats/tsezar-kurica.jpg" alt="Салаты Цезарь с курицей">
+                        <span class="product__description">
+            Салат, помдор, сыр, яйцо, сухари, курица, соус
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_091" class="product__order" onclick="cart.addToCart(this, '091', priceList['091'])">
+                <span class="product__order-price" data-focus="Добавлено!">189 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Киоти</h6>
+                        <img class="product__image" src="assets/img/salats/kioto.jpg" alt="Салаты Киоти">
+                        <span class="product__description">
+            Свиная шея, морковь, перец болгарский, лук, капуста пекинская, лист салата, кунжут, соус
+        </span>
+                        <span class="product__weight">
+            230 г.
+        </span>
+                        <button id="wicartbutton_092" class="product__order" onclick="cart.addToCart(this, '092', priceList['092'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="rice" class="rice">
+
+                <h2 class="section-title">Рис и лапша:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Рис с креветками</h6>
+                        <img class="product__image" src="assets/img/rice/rice-krevets.png" alt="Рис, лапша Рис с креветками">
+                        <span class="product__description">
+            Рис, креветки тигровые, омлет японский, соус
+        </span>
+                        <span class="product__weight">
+            290 г.
+        </span>
+                        <button id="wicartbutton_093" class="product__order" onclick="cart.addToCart(this, '093', priceList['093'])">
+                <span class="product__order-price" data-focus="Добавлено!">199 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Рис с говядиной</h6>
+                        <img class="product__image" src="assets/img/rice/rice-telyatina.png" alt="Рис, лапша Рис с говядиной">
+                        <span class="product__description">
+            Рис, говядина, овощи, соус
+        </span>
+                        <span class="product__weight">
+            290 г.
+        </span>
+                        <button id="wicartbutton_094" class="product__order" onclick="cart.addToCart(this, '094', priceList['094'])">
+                <span class="product__order-price" data-focus="Добавлено!">189 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Рис со свининой</h6>
+                        <img class="product__image" src="assets/img/rice/rice-telyatina.png" alt="Рис, лапша Рис со свининой">
+                        <span class="product__description">
+            Рис, свинина, овощи, соус
+        </span>
+                        <span class="product__weight">
+            290 г.
+        </span>
+                        <button id="wicartbutton_095" class="product__order" onclick="cart.addToCart(this, '095', priceList['095'])">
+                <span class="product__order-price" data-focus="Добавлено!">189 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Рис с курицей</h6>
+                        <img class="product__image" src="assets/img/rice/rice-kurica.png" alt="Рис, лапша Рис с курицей">
+                        <span class="product__description">
+            Рис, курица, овощи, соус
+        </span>
+                        <span class="product__weight">
+            290 г.
+        </span>
+                        <button id="wicartbutton_096" class="product__order" onclick="cart.addToCart(this, '096', priceList['096'])">
+                <span class="product__order-price" data-focus="Добавлено!">179 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Рис с овощами</h6>
+                        <img class="product__image" src="assets/img/rice/rice-ovoschi.png" alt="Рис, лапша Рис с овощами">
+                        <span class="product__description">
+            Рис, овощи
+        </span>
+                        <span class="product__weight">
+            290 г.
+        </span>
+                        <button id="wicartbutton_097" class="product__order" onclick="cart.addToCart(this, '097', priceList['097'])">
+                <span class="product__order-price" data-focus="Добавлено!">169 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Лапша с говядиной</h6>
+                        <img class="product__image" src="assets/img/rice/lapsha-govyadina.png" alt="Рис, лапша Лапша с говядиной">
+                        <span class="product__description">
+            Лапша соба (гречневая), говядина, овощи
+        </span>
+                        <span class="product__weight">
+            229 г.
+        </span>
+                        <button id="wicartbutton_098" class="product__order" onclick="cart.addToCart(this, '098', priceList['098'])">
+                <span class="product__order-price" data-focus="Добавлено!">300 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Лапша со свининой</h6>
+                        <img class="product__image" src="assets/img/rice/lapsha-govyadina.png" alt="Рис, лапша Лапша со свининой">
+                        <span class="product__description">
+            Лапша соба (гречневая), свинина, овощи
+        </span>
+                        <span class="product__weight">
+            229 г.
+        </span>
+                        <button id="wicartbutton_099" class="product__order" onclick="cart.addToCart(this, '099', priceList['099'])">
+                <span class="product__order-price" data-focus="Добавлено!">300 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Лапша с курицей</h6>
+                        <img class="product__image" src="assets/img/rice/lapsha-kurica.png" alt="Рис, лапша Лапша с курицей">
+                        <span class="product__description">
+            Лапша соба (гречневая), курица, овощи
+        </span>
+                        <span class="product__weight">
+            219 г.
+        </span>
+                        <button id="wicartbutton_100" class="product__order" onclick="cart.addToCart(this, '100', priceList['100'])">
+                <span class="product__order-price" data-focus="Добавлено!">300 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Лапша с морепродуктами</h6>
+                        <img class="product__image" src="assets/img/rice/lapsha-more.png" alt="Рис, лапша Лапша с морепродуктами">
+                        <span class="product__description">
+            Лапша удон, морепродукты
+        </span>
+                        <span class="product__weight">
+            300 г.
+        </span>
+                        <button id="wicartbutton_101" class="product__order" onclick="cart.addToCart(this, '101', priceList['101'])">
+                <span class="product__order-price" data-focus="Добавлено!">259 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Лапша с копченостями</h6>
+                        <img class="product__image" src="assets/img/rice/lapsha-kopchenosti.png" alt="Рис, лапша Лапша с копченостями">
+                        <span class="product__description">
+            Лапша удон, копчености, сливки, перец чили
+        </span>
+                        <span class="product__weight">
+            300 г.
+        </span>
+                        <button id="wicartbutton_102" class="product__order" onclick="cart.addToCart(this, '102', priceList['102'])">
+                <span class="product__order-price" data-focus="Добавлено!">219 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Фунчоза с говядиной</h6>
+                        <img class="product__image" src="assets/img/rice/lapsha-govyadina.jpeg" alt="Рис, лапша Фунчоза с говядиной">
+                        <span class="product__description">
+            Фунчоза, говядина, овощи, соус
+        </span>
+                        <span class="product__weight">
+            290 г.
+        </span>
+                        <button id="wicartbutton_103" class="product__order" onclick="cart.addToCart(this, '103', priceList['103'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Фунчоза со свининой</h6>
+                        <img class="product__image" src="assets/img/rice/funchosa-svinina.png" alt="Рис, лапша Фунчоза со свининой">
+                        <span class="product__description">
+            Фунчоза, свинина, овощи, соус
+        </span>
+                        <span class="product__weight">
+            290 г.
+        </span>
+                        <button id="wicartbutton_104" class="product__order" onclick="cart.addToCart(this, '104', priceList['104'])">
+                <span class="product__order-price" data-focus="Добавлено!">229 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Фунчоза с курицей</h6>
+                        <img class="product__image" src="assets/img/rice/funchosa-kurica.png" alt="Рис, лапша Фунчоза с курицей">
+                        <span class="product__description">
+            Фунчоза, курица, овощи, соус
+        </span>
+                        <span class="product__weight">
+            290 г.
+        </span>
+                        <button id="wicartbutton_105" class="product__order" onclick="cart.addToCart(this, '105', priceList['105'])">
+                <span class="product__order-price" data-focus="Добавлено!">219 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="sets" class="sets">
+
+                <h2 class="section-title">Наборы:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Набор Мини</h6>
+                        <img class="product__image" src="assets/img/sets/mini.jpg" alt="Наборы Набор Мини">
+                        <span class="product__description">
+            Калифорния 1/2, Майами 1/2, Нежный угорь 1/2
+        </span>
+                        <span class="product__weight">
+            12шт г.
+        </span>
+                        <button id="wicartbutton_106" class="product__order" onclick="cart.addToCart(this, '106', priceList['106'])">
+                <span class="product__order-price" data-focus="Добавлено!">329 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Набор №1</h6>
+                        <img class="product__image" src="assets/img/sets/set-1.jpg" alt="Наборы Набор №1">
+                        <span class="product__description">
+            Скандинавия 1/2, Майами 1/2, Филадельфия, ролл со слабосоленым лососем, суши сяке 2шт
+        </span>
+                        <span class="product__weight">
+            24шт г.
+        </span>
+                        <button id="wicartbutton_107" class="product__order" onclick="cart.addToCart(this, '107', priceList['107'])">
+                <span class="product__order-price" data-focus="Добавлено!">749 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Набор №2</h6>
+                        <img class="product__image" src="assets/img/sets/set-2.jpg" alt="Наборы Набор №2">
+                        <span class="product__description">
+            Ролл со слабосоленым лососем, ролл с копченым лососем, ролл с угрем, ролл с креветкой, ролл с огурцом, ролл с авокадо
+        </span>
+                        <span class="product__weight">
+            36 шт г.
+        </span>
+                        <button id="wicartbutton_108" class="product__order" onclick="cart.addToCart(this, '108', priceList['108'])">
+                <span class="product__order-price" data-focus="Добавлено!">499 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Набор № 3</h6>
+                        <img class="product__image" src="assets/img/sets/set-3.jpg" alt="Наборы Набор № 3">
+                        <span class="product__description">
+            Дракон, калифорния, аляска, филадельфия, ролл с креветкой, грин ролл, кунсей капа, унаги темпура, якудза
+        </span>
+                        <span class="product__weight">
+            70 шт., 4 соуса, 4 васаби, 4 имбиря г.
+        </span>
+                        <button id="wicartbutton_109" class="product__order" onclick="cart.addToCart(this, '109', priceList['109'])">
+                <span class="product__order-price" data-focus="Добавлено!">1899 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Набор Ассорти</h6>
+                        <img class="product__image" src="assets/img/sets/assorti.jpg" alt="Наборы Набор Ассорти">
+                        <span class="product__description">
+            Ролл с креветкой, аляска, дракон, калифорния
+        </span>
+                        <span class="product__weight">
+            30 шт., 2 соуса, 2 васаби, 2 имбиря г.
+        </span>
+                        <button id="wicartbutton_110" class="product__order" onclick="cart.addToCart(this, '110', priceList['110'])">
+                <span class="product__order-price" data-focus="Добавлено!">899 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Набор Тортилья</h6>
+                        <img class="product__image" src="assets/img/sets/torts.jpg" alt="Наборы Набор Тортилья">
+                        <span class="product__description">
+            Тортилья с угрём, тортилья с лососем, тортилья с говядиной, тортилья с беконом, тортилья с курицей
+        </span>
+                        <span class="product__weight">
+            40 шт., 3 соуса, 3 васаби, 3 имбиря г.
+        </span>
+                        <button id="wicartbutton_111" class="product__order" onclick="cart.addToCart(this, '111', priceList['111'])">
+                <span class="product__order-price" data-focus="Добавлено!">1049 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Набор Дракон</h6>
+                        <img class="product__image" src="assets/img/sets/dragon.jpg" alt="Наборы Набор Дракон">
+                        <span class="product__description">
+            Филадельфия с огурцом, скандинавия, капа хосомаки, канада, ролл с огурцом, ролл с авокадо, ролл с тунцом, ролл с сёмгой, бостон, фудзияма, куцу, принт, майами, син унаги, горячая гейша, калифорния, нежный угорь 126 шт., 7 соусов, 7 васаби, 7 имбиря
+        </span>
+                        <span class="product__weight">
+            126 шт., 7 соусов, 7 васаби, 7 имбиря г.
+        </span>
+                        <button id="wicartbutton_112" class="product__order" onclick="cart.addToCart(this, '112', priceList['112'])">
+                <span class="product__order-price" data-focus="Добавлено!">2999 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="sauces" class="sauces">
+
+                <h2 class="section-title">Соусы:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Имбирь</h6>
+                        <img class="product__image" src="assets/img/sauces/imbir.jpg" alt="соус Имбирь">
+                        <button id="wicartbutton_113" class="product__order" onclick="cart.addToCart(this, '113', priceList['113'])">
+                <span class="product__order-price" data-focus="Добавлено!">20 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Соевый соус</h6>
+                        <img class="product__image" src="assets/img/sauces/soya.jpg" alt="соус Соевый соус">
+                        <button id="wicartbutton_114" class="product__order" onclick="cart.addToCart(this, '114', priceList['114'])">
+                <span class="product__order-price" data-focus="Добавлено!">20 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Васаби</h6>
+                        <img class="product__image" src="assets/img/sauces/wasabi.jpg" alt="соус Васаби">
+                        <button id="wicartbutton_115" class="product__order" onclick="cart.addToCart(this, '115', priceList['115'])">
+                <span class="product__order-price" data-focus="Добавлено!">20 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Терияки</h6>
+                        <img class="product__image" src="assets/img/sauces/teryaki.jpg" alt="соус Терияки">
+                        <button id="wicartbutton_116" class="product__order" onclick="cart.addToCart(this, '116', priceList['116'])">
+                <span class="product__order-price" data-focus="Добавлено!">20 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Цезарь-соус</h6>
+                        <img class="product__image" src="assets/img/sauces/tsezar-sauce.jpg" alt="соус Цезарь-соус">
+                        <button id="wicartbutton_117" class="product__order" onclick="cart.addToCart(this, '117', priceList['117'])">
+                <span class="product__order-price" data-focus="Добавлено!">20 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Сливочный соус</h6>
+                        <img class="product__image" src="assets/img/sauces/slive.jpg" alt="соус Сливочный соус">
+                        <button id="wicartbutton_118" class="product__order" onclick="cart.addToCart(this, '118', priceList['118'])">
+                <span class="product__order-price" data-focus="Добавлено!">20 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Соус с зеленью</h6>
+                        <img class="product__image" src="assets/img/sauces/zelen.jpg" alt="соус Соус с зеленью">
+                        <button id="wicartbutton_119" class="product__order" onclick="cart.addToCart(this, '119', priceList['119'])">
+                <span class="product__order-price" data-focus="Добавлено!">20 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Чесночный соус</h6>
+                        <img class="product__image" src="assets/img/sauces/chestnok.jpg" alt="соус Чесночный соус">
+                        <button id="wicartbutton_120" class="product__order" onclick="cart.addToCart(this, '120', priceList['120'])">
+                <span class="product__order-price" data-focus="Добавлено!">20 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Соус спайси</h6>
+                        <img class="product__image" src="assets/img/sauces/sauce-space.jpg" alt="соус Соус спайси">
+                        <button id="wicartbutton_121" class="product__order" onclick="cart.addToCart(this, '121', priceList['121'])">
+                <span class="product__order-price" data-focus="Добавлено!">20 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="drinks" class="drinks">
+
+                <h2 class="section-title">Напитки:</h2>
+
+                <ul class="container_flex-row">
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Coca-Cola</h6>
+                        <img class="product__image" src="assets/img/drinks/cola.jpg" alt=" Coca-Cola">
+                        <span class="product__weight">
+            1 л.
+        </span>
+                        <button id="wicartbutton_122" class="product__order" onclick="cart.addToCart(this, '122', priceList['122'])">
+                <span class="product__order-price" data-focus="Добавлено!">70 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Fanta</h6>
+                        <img class="product__image" src="assets/img/drinks/fanta.png" alt=" Fanta">
+                        <span class="product__weight">
+            1 л.
+        </span>
+                        <button id="wicartbutton_123" class="product__order" onclick="cart.addToCart(this, '123', priceList['123'])">
+                <span class="product__order-price" data-focus="Добавлено!">70 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Sprite</h6>
+                        <img class="product__image" src="assets/img/drinks/sprite.png" alt=" Sprite">
+                        <span class="product__weight">
+            1 л.
+        </span>
+                        <button id="wicartbutton_124" class="product__order" onclick="cart.addToCart(this, '124', priceList['124'])">
+                <span class="product__order-price" data-focus="Добавлено!">70 р.
+            </span>
+            </button>
+                    </li>
+                    <li class="product" ripple-dark>
+                        <h6 class="product__name">Nestea</h6>
+                        <img class="product__image" src="assets/img/drinks/nestea.png" alt=" Nestea">
+                        <span class="product__weight">
+            0.5 л.
+        </span>
+                        <button id="wicartbutton_125" class="product__order" onclick="cart.addToCart(this, '125', priceList['125'])">
+                <span class="product__order-price" data-focus="Добавлено!">55 р.
+            </span>
+            </button>
+                    </li>
+                </ul>
             </section>
 
         </main>
@@ -792,8 +2110,7 @@
                 <div class="feedback">
 
                     <a class="feedback__button" href="mailto:Vaz211483@mail.ru" ripple-light>
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        &nbsp;Отправить отзыв
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;Отправить отзыв
                     </a>
 
                 </div>
@@ -861,7 +2178,7 @@
 
     </div>
 
-     <div id="modal" class="modal is-visible ">
+    <div id="modal" class="modal is-visible ">
 
         <div class="modal__header">
             <h4 class="modal__header-title">Оформить заказ:</h4>
@@ -884,21 +2201,19 @@
                 <div class="form__row">
                     <i class="form__icon fa fa-fw fa-user-circle" aria-hidden="true"></i>
                     <input
-                    id="fio"
-                    type="text"
-                    class="form__input"
-                    placeholder="Ваше имя"
-                    >
+                        id="fio"
+                        type="text"
+                        class="form__input"
+                        placeholder="Ваше имя">
                 </div>
 
                 <div class="form__row">
                     <i class="form__icon fa fa-fw fa-phone" aria-hidden="true"></i>
                     <input
-                    id="phone"
-                    type="tel"
-                    class="form__input"
-                    placeholder="Номер телефона"
-                    >
+                        id="phone"
+                        type="tel"
+                        class="form__input"
+                        placeholder="Номер телефона">
                 </div>
 
                 <div class="form__row">
@@ -914,10 +2229,10 @@
                 <div class="form__row">
                     <i class="form__icon fa fa-fw fa-pencil" aria-hidden="true"></i>
                     <textarea
-                    id="question"
-                    class="form__textarea"
-                    placeholder="Есть карта Сушилки или Greenlight? Заказ ко дню рождения?"
-                    ></textarea>
+                        id="question"
+                        class="form__textarea"
+                        placeholder="Есть карта Сушилки или Greenlight? Заказ ко дню рождения?"
+                        ></textarea>
                 </div>
 
             </form>
@@ -926,18 +2241,17 @@
 
         <div class="modal__footer">
             <button
-                id="send"
-                class="modal__send"
-                onclick="cart.sendOrder('formToSend,overflw,bsum');"
-                href="#"
-                ripple-dark
-                >
-                <i class="modal__icon fa fa-fw fa-paper-plane" aria-hidden="true"></i>
-                &nbsp;&nbsp;Отправить заказ
+            id="send"
+            class="modal__send"
+            onclick="cart.sendOrder('formToSend,overflw,bsum');"
+            href="#"
+            ripple-dark
+            >
+                <i class="modal__icon fa fa-fw fa-paper-plane" aria-hidden="true"></i> &nbsp;&nbsp;Отправить заказ
             </button>
         </div>
 
-     </div>
+    </div>
 
     <!--build:js js/main.min.js -->
     <script type="text/javascript" src="bower_components/velocity/velocity.js"></script>
@@ -950,7 +2264,7 @@
     <script type="text/javascript" src="js/wicart.js"></script>
 
     <script type="text/javascript" src="js/base.js"></script>
-    <script type="text/javascript" src="js/modal.js"></script>
+    <!--<script type="text/javascript" src="js/modal.js"></script> -->
     <script type="text/javascript" src="js/main.js"></script>
     <!-- endbuild -->
 

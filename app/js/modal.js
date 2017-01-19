@@ -32,25 +32,6 @@ $(document).ready(function () {
 
 	formSend.on('click', modal_send);
 
-	$(document).keyup(function (event) {
-		if (event.which == '27') {
-			formOverlay.removeClass('overlay--visible'),
-				formModal.removeClass('modal__window--visible')
-		}
-	});
-
-	function modal_close(e) {
-		e.preventDefault();
-		formOverlay.removeClass('overlay--visible'),
-			formModal.removeClass('modal__window--visible')
-	};
-
-	function modal_opened(e) {
-		e.preventDefault();
-		formOverlay.toggleClass('overlay--visible'),
-			formModal.toggleClass('modal__window--visible')
-	};
-
 	function modal_send() {
 		swal(confirm),
 			$.ajax({
@@ -66,8 +47,6 @@ $(document).ready(function () {
 						swal(success),
 							posName.val(''),
 							posPhone.val(''),
-							formOverlay.removeClass('overlay--visible'),
-							formModal.removeClass('modal__window--visible')
 					} else {
 						swal(error)
 					}

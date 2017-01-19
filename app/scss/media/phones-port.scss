@@ -2,6 +2,7 @@
 @import '../partials/_variables';
 @import '../partials/_layout';
 @import '../partials/_mixins';
+
 @include MQ(Pp) {
     .cart {
         top: 0;
@@ -19,6 +20,15 @@
         &__header-title {
             text-align: left;
             padding-left: 2vw;
+        }
+    }
+
+    .header {
+        &__title {
+            font-size: 1.5rem
+        }
+        &__subtitle {
+            font-size: 1.5rem
         }
     }
 

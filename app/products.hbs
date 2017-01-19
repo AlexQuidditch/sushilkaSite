@@ -6,250 +6,350 @@
     <title>Document</title>
 
     <script>
-        Handlebars.registerHelper('list', function(items, options) {
-            var out = '<ul class="container_flex-row">';
-            for (var i = 0, l = items.length; i < l; i++) {
-                out = out + '<li class="product" ripple-dark>' + options.fn(items[i]) + "</li>";
-            };
-            out = out + "</ul>";
-            return out;
-        });
+    Handlebars.registerHelper('list', function(items, options) {
+        var out = '<ul class="container_flex-row">';
+        for (var i = 0, l = items.length; i < l; i++) {
+            out = out + '<li class="product" ripple-dark>' + options.fn(items[i]) + "</li>";
+        };
+        out = out + "</ul>";
+        return out;
+    });
     </script>
 
 </head>
 
 <body>
 
+<section id="rolls" class="rolls">
+
+    <h2 class="section-title">Роллы:</h2>
+
     {{#list rolls}}
-        <h6 class="product__title">{{title}}</h6>
+        <h6 class="product__name">{{name}}</h6>
         <img
             class="product__image"
             src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
+            alt="{{type}} {{name}}">
         <span class="product__description">
             {{decription}}
         </span>
         <span class="product__weight">
             {{weight}} г.
         </span>
-        <button class="product__order">
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
 		    <span
             class="product__order-price"
             data-focus="Добавлено!"
-            >{{price}} р
+            >{{price}} р.
             </span>
 	    </button>
     {{/list}}
+</section>
+
+<section id="baked" class="baked">
+
+    <h2 class="section-title">Горячие роллы:</h2>
 
     {{#list baked}}
-        <h6 class="product__title">{{title}}</h6>
+        <h6 class="product__name">{{name}}</h6>
         <img
             class="product__image"
             src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
+            alt="{{type}} {{name}}">
         <span class="product__description">
             {{decription}}
         </span>
         <span class="product__weight">
             {{weight}} г.
         </span>
-        <button class="product__order">
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
 		    <span
             class="product__order-price"
             data-focus="Добавлено!"
-            >{{price}} р
+            >{{price}} р.
             </span>
 	    </button>
     {{/list}}
 
-    {{#list tempura-rolls}}
-        <h6 class="product__title">{{title}}</h6>
-        <img
-            class="product__image"
-            src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
-        <span class="product__description">
-            {{decription}}
-        </span>
-        <span class="product__weight">
-            {{weight}} г.
-        </span>
-        <button class="product__order">
-		    <span
-            class="product__order-price"
-            data-focus="Добавлено!"
-            >{{price}} р
-            </span>
-	    </button>
-    {{/list}}
+</section>
 
-    {{#list torts}}
-        <h6 class="product__title">{{title}}</h6>
-        <img
-            class="product__image"
-            src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
-        <span class="product__description">
-            {{decription}}
-        </span>
-        <span class="product__weight">
-            {{weight}} г.
-        </span>
-        <button class="product__order">
-		    <span
-            class="product__order-price"
-            data-focus="Добавлено!"
-            >{{price}} р
-            </span>
-	    </button>
-    {{/list}}
+<section id="tempura" class="tempura">
+
+    <h2 class="section-title">Темпура:</h2>
 
     {{#list tempura}}
-        <h6 class="product__title">{{title}}</h6>
+        <h6 class="product__name">{{name}}</h6>
         <img
             class="product__image"
             src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
+            alt="{{type}} {{name}}">
         <span class="product__description">
             {{decription}}
         </span>
         <span class="product__weight">
             {{weight}} г.
         </span>
-        <button class="product__order">
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
 		    <span
             class="product__order-price"
             data-focus="Добавлено!"
-            >{{price}} р
+            >{{price}} р.
             </span>
 	    </button>
     {{/list}}
+
+</section>
+
+<section id="torts" class="torts">
+
+    <h2 class="section-title">Тортильи:</h2>
+
+    {{#list torts}}
+        <h6 class="product__name">{{name}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{name}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р.
+            </span>
+	    </button>
+    {{/list}}
+
+</section>
+
+<section id="omlet" class="omlet">
+
+    <h2 class="section-title">Роллы в японском омлете:</h2>
 
     {{#list omlet}}
-        <h6 class="product__title">{{title}}</h6>
+        <h6 class="product__name">{{name}}</h6>
         <img
             class="product__image"
             src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
+            alt="{{type}} {{name}}">
         <span class="product__description">
             {{decription}}
         </span>
         <span class="product__weight">
             {{weight}} г.
         </span>
-        <button class="product__order">
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
 		    <span
             class="product__order-price"
             data-focus="Добавлено!"
-            >{{price}} р
+            >{{price}} р.
             </span>
 	    </button>
     {{/list}}
+
+</section>
+
+<section id="sushi" class="sushi">
+
+    <h2 class="section-title">Суши:</h2>
+
+    {{#list sushi}}
+        <h6 class="product__name">{{name}}</h6>
+        <img
+            class="product__image"
+            src="assets/img{{picture}}"
+            alt="{{type}} {{name}}">
+        <span class="product__description">
+            {{decription}}
+        </span>
+        <span class="product__weight">
+            {{weight}} г.
+        </span>
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
+		    <span
+            class="product__order-price"
+            data-focus="Добавлено!"
+            >{{price}} р.
+            </span>
+	    </button>
+    {{/list}}
+
+</section>
+
+<section id="salats" class="salats">
+
+    <h2 class="section-title">Салаты:</h2>
 
     {{#list salats}}
-        <h6 class="product__title">{{title}}</h6>
+        <h6 class="product__name">{{name}}</h6>
         <img
             class="product__image"
             src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
+            alt="{{type}} {{name}}">
         <span class="product__description">
             {{decription}}
         </span>
         <span class="product__weight">
             {{weight}} г.
         </span>
-        <button class="product__order">
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
 		    <span
             class="product__order-price"
             data-focus="Добавлено!"
-            >{{price}} р
+            >{{price}} р.
             </span>
 	    </button>
     {{/list}}
+
+</section>
+
+<section id="rice" class="rice">
+
+    <h2 class="section-title">Рис и лапша:</h2>
 
     {{#list rice}}
-        <h6 class="product__title">{{title}}</h6>
+        <h6 class="product__name">{{name}}</h6>
         <img
             class="product__image"
             src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
+            alt="{{type}} {{name}}">
         <span class="product__description">
             {{decription}}
         </span>
         <span class="product__weight">
             {{weight}} г.
         </span>
-        <button class="product__order">
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
 		    <span
             class="product__order-price"
             data-focus="Добавлено!"
-            >{{price}} р
+            >{{price}} р.
             </span>
 	    </button>
     {{/list}}
+
+</section>
+
+<section id="sets" class="sets">
+
+    <h2 class="section-title">Наборы:</h2>
 
     {{#list sets}}
-        <h6 class="product__title">{{title}}</h6>
+        <h6 class="product__name">{{name}}</h6>
         <img
             class="product__image"
             src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
+            alt="{{type}} {{name}}">
         <span class="product__description">
             {{decription}}
         </span>
         <span class="product__weight">
             {{weight}} г.
         </span>
-        <button class="product__order">
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
 		    <span
             class="product__order-price"
             data-focus="Добавлено!"
-            >{{price}} р
+            >{{price}} р.
             </span>
 	    </button>
     {{/list}}
+
+</section>
+
+<section id="sauces" class="sauces">
+
+    <h2 class="section-title">Соусы:</h2>
 
     {{#list sauces}}
-        <h6 class="product__title">{{title}}</h6>
+        <h6 class="product__name">{{name}}</h6>
         <img
             class="product__image"
             src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
-        <span class="product__description">
-            {{decription}}
-        </span>
-        <span class="product__weight">
-            {{weight}} г.
-        </span>
-        <button class="product__order">
+            alt="{{type}} {{name}}">
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
 		    <span
             class="product__order-price"
             data-focus="Добавлено!"
-            >{{price}} р
+            >{{price}} р.
             </span>
 	    </button>
     {{/list}}
 
+</section>
+
+<section id="drinks" class="drinks">
+
+    <h2 class="section-title">Напитки:</h2>
+
     {{#list drinks}}
-        <h6 class="product__title">{{title}}</h6>
+        <h6 class="product__name">{{name}}</h6>
         <img
             class="product__image"
             src="assets/img{{picture}}"
-            alt="{{type}} {{title}}">
-        <span class="product__description">
-            {{decription}}
-        </span>
+            alt="{{type}} {{name}}">
         <span class="product__weight">
-            {{weight}} г.
+            {{weight}} л.
         </span>
-        <button class="product__order">
+        <button
+            id="wicartbutton_{{id}}"
+            class="product__order"
+            onclick="cart.addToCart(this, '{{id}}', priceList['{{id}}'])"
+            >
 		    <span
             class="product__order-price"
             data-focus="Добавлено!"
-            >{{price}} р
+            >{{price}} р.
             </span>
 	    </button>
     {{/list}}
+
+</section>
 
 </body>
 
